@@ -23,8 +23,8 @@
 ## Components
 - select --> OK
 - Buttons
-- Radio
-- Checkbox
+- Radio --> OK
+- Checkbox --> OK
 - Switch
 
 ## Grillade

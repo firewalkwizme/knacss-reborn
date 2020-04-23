@@ -29,3 +29,11 @@ select {
   border-radius: 0;
   padding-right: calc(var(--select-arrow-size) + 1rem);
 }
+
+/*
+ * Change the inconsistent appearance in IE.
+ */
+
+::-ms-expand {
+  display: none;
+}

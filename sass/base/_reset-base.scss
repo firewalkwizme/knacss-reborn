@@ -194,3 +194,18 @@ svg:not(:root) {
 table {
   border-collapse: collapse;
 }
+
+/*
+ * Rulers
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid;
+  margin: var(--spacer-medium) 0;
+  clear: both;
+  color: inherit;
+}
