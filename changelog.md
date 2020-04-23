@@ -21,7 +21,7 @@
 - Helpers
 
 ## Components
-- select --> OK
+- Select --> OK
 - Buttons
 - Radio --> OK
 - Checkbox --> OK
