@@ -5,11 +5,19 @@
 
 # Todo List
 
+## knacss.scss
+
+Importing all the Core files. 
+
+Components, Utilities, Grillade are optional.
+
+## Sass
+- Variables Sass ($breakpoints and $variants-list) 
+- Mixins Sass (respond-to, font-sizes, grid)
+
 ## Core
-- Variables Sass  --> OK
 - Variables natives  --> OK
-- Mixins Sass
-- Reset Global  --> OK
+- Reset Base  --> OK
 - Reset Forms --> OK
 - Accessibility --> OK
 
@@ -20,13 +28,17 @@
 - Utilities
 - Helpers
 
-## Components
+## Components (core)
 - Select --> OK
-- Buttons
 - Radio --> OK
 - Checkbox --> OK
+- Buttons
+- skip-links
+
+## Components (add-ons)
 - Switch
+- Tables
 
 ## Grillade
 
-## Vendor
+## Vendor ?
