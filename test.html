@@ -722,7 +722,9 @@ display: none;
 border-radius: var(--switch-border-radius);
 }
 
-.switch {
+.switch,
+.switch:not(:checked),
+.switch:indeterminate {
 -webkit-appearance: none;
 appearance: none;
 width: calc(var(--switch-size) * 2);
@@ -741,7 +743,7 @@ background-image: radial-gradient(circle, var(--gray-400) 50%, transparent 50%);
 background-position: left center;
 background-repeat: no-repeat;
 background-size: var(--switch-size) var(--switch-size);
-transition: background .2s;
+transition: background-position .2s;
 }
 
 
