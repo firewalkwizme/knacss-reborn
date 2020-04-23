@@ -1,0 +1,90 @@
+// ----------
+// Fonts zone
+// ----------
+
+// Font families
+:root {
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-family-headings : sans-serif;
+  --font-family-monospace : consolas, courier, monospace;
+  --line-height-base: 1.5;
+}
+
+// Font sizes (if html at 62.5%, then 1.6rem value is "16px" equivalent)
+:root {
+  --font-size-html : 62.5%;
+  --font-size-base : 1.6rem;
+}
+
+// Line heights
+:root {
+  --line-height-s    : 1.3;
+  --line-height-base : 1.5;
+  --line-height-l    : 1.7;
+}
+
+// Font weights
+:root {
+  --weight-light   : 200;
+  --weight-book    : 300;
+  --weight-regular : 400;
+  --weight-medium  : 500;
+  --weight-bold    : 700;
+}
+
+// Spacing variables
+:root {
+  --spacer-tiny        : .5rem;
+  --spacer-tiny-plus   : .7rem;
+  --spacer-small       : 1rem;
+  --spacer-small-plus  : 1.5rem;
+  --spacer-medium      : 2rem;
+  --spacer-medium-plus : 3rem;
+  --spacer-large       : 4rem;
+  --spacer-large-plus  : 6rem;
+}
+
+// Colors basic
+:root {
+  --white    : #fff;
+  --black    : #000;
+  --gray-100 : #f8f9fa;
+  --gray-200 : #e7e9ed;
+  --gray-300 : #dee2e6;
+  --gray-400 : #ced4da;
+  --gray-500 : #acb3c2;
+  --gray-600 : #727e96;
+  --gray-700 : #454d5d;
+  --gray-800 : #333;
+  --gray-900 : #212529
+}
+
+// Colors semantic
+:root {
+  $color-base : var(--gray-900);
+
+  $color-primary : #0275D8;
+  $color-success : #5CB85C;
+  $color-info    : #5BC0DE;
+  $color-warning : #F0AD4E;
+  $color-danger  : #D9534F;
+  $color-inverse : var(--gray-800);
+  $color-muted   : var(--gray-200);
+  $color-ghost   : transparent;
+}
+
+// Links
+:root {
+  --link-color       : var(--gray-800);
+  --link-color-hover : var(--gray-900);
+  --link-decoration  : underline;
+  --link-decoration-hover : underline;
+}
+
+// Global components variables
+:root {
+  --border-radius           : 0;
+  --border-radius-alternate : 6px;
+  --forms-color             : var(--gray-800);
+  --forms-color-alternate   : var(--gray-800);
+}
