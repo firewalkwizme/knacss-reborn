@@ -1,0 +1,72 @@
+/*
+ * HTML template example:
+ * <input type="checkbox" class="switch" id="switch">
+ * <label for="switch" class="label">slide to unlock</label>
+ */
+
+
+/*
+ * switch variables (you can change them)
+ */
+
+.switch {
+  --switch-color: var(--forms-color);
+  --switch-background: var(--white);
+  --switch-size: 2rem;
+  --switch-border-radius: 1rem;
+}
+
+/*
+ * switch styles
+ */
+
+.switch {
+  border-radius: var(--switch-border-radius);
+}
+
+.switch {
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(var(--switch-size) * 2);
+  height: var(--switch-size);
+  line-height: var(--switch-size);
+  vertical-align: text-bottom;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px var(--forms-color);
+  cursor: pointer;
+
+  background-color: var(--switch-background);
+  background-image: radial-gradient(circle, var(--gray-400) 50%, transparent 50%);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: var(--switch-size) var(--switch-size);
+  transition: background .2s;
+}
+
+
+.switch + label {
+  cursor: pointer;
+}
+
+.switch:disabled {
+  opacity: .6;
+}
+
+.switch:disabled + label {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.switch:checked {
+  background-image: radial-gradient(circle, white 50%, transparent 50%);
+  background-position: right center;
+  background-color: var(--switch-color);
+}
+
+/*
+ * Change the inconsistent appearance in IE.
+ */
+
+.switch::-ms-check {
+  display: none;
+}

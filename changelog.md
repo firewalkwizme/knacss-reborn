@@ -36,7 +36,7 @@ Components, Utilities, Grillade are optional.
 - skip-links
 
 ## Components (add-ons)
-- Switch
+- Switch --> OK
 - Tables
 
 ## Grillade
