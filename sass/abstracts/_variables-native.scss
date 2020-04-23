@@ -4,7 +4,7 @@
 
 // Font families
 :root {
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-family-headings : sans-serif;
   --font-family-monospace : consolas, courier, monospace;
   --line-height-base: 1.5;
@@ -61,16 +61,16 @@
 
 // Colors semantic
 :root {
-  $color-base : var(--gray-900);
+  --color-base : var(--gray-900);
 
-  $color-primary : #0275D8;
-  $color-success : #5CB85C;
-  $color-info    : #5BC0DE;
-  $color-warning : #F0AD4E;
-  $color-danger  : #D9534F;
-  $color-inverse : var(--gray-800);
-  $color-muted   : var(--gray-200);
-  $color-ghost   : transparent;
+  --color-primary : #0275D8;
+  --color-success : #5CB85C;
+  --color-info    : #5BC0DE;
+  --color-warning : #F0AD4E;
+  --color-danger  : #D9534F;
+  --color-inverse : var(--gray-800);
+  --color-muted   : var(--gray-200);
+  --color-ghost   : transparent;
 }
 
 // Links
@@ -83,6 +83,7 @@
 
 // Global components variables
 :root {
+  --margin-body             : 0;
   --border-radius           : 0;
   --border-radius-alternate : 6px;
   --forms-color             : var(--gray-800);

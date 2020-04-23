@@ -1,0 +1,185 @@
+/* ----------------------------- */
+/* ==Reset (base)                */
+/* ----------------------------- */
+
+/*
+ * 1. Switch to border-box model for all elements
+ * 2. Avoid min-width: auto and min-height: auto on flex and grid children
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* 1 */
+  min-width: 0; /* 2 */
+  min-height: 0; /* 2 */
+}
+
+/*
+ * 1. Remove the grey highlight on links in iOS 
+ * 2. Prevent orientation font changes in iOS
+ * 3. Breaks words to prevent overflow in all browsers
+ */
+
+html {
+  font-size: var(--font-size-html);
+  -webkit-tap-highlight-color: transparent; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  word-break: break-word; /* 3 */
+}
+
+body {
+  margin: var(--margin-body);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--white);
+  color: var(--color-base);
+}
+
+/*
+ * Links
+ */
+
+a {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: var(--link-color-hover);
+  text-decoration: var(--link-decoration-hover);
+}
+
+/*
+ * vertical rythm
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dd {
+  margin-top: 0;
+  margin-bottom: var(--spacer-medium);
+}
+
+p,
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre {
+  margin-top: 0;
+  margin-bottom: var(--spacer-small);
+}
+
+/*
+ * Nested elements
+ */
+
+ol ol,
+ol ul,
+ul ol,
+ul ul,
+li ul,
+li ol,
+nav ul,
+nav ol,
+li p,
+li .p-like {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Lists
+ */
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+/*
+ * Embed content
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img,
+table,
+td,
+blockquote,
+pre,
+code,
+input,
+textarea,
+select,
+video,
+svg,
+iframe {
+  max-width: 100%;
+}
+
+iframe,
+img,
+input,
+select,
+textarea {
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
+
+/**
+ * Remove the border on iframes in all browsers
+ */
+
+iframe {
+  border-style: none;
+}
+
+/*
+ * Fill color matching to text color
+ */
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/*
+ * Hide the overflow in IE
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+ * Tables
+ */
+
+table {
+  border-collapse: collapse;
+}
