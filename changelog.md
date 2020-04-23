@@ -6,12 +6,12 @@
 # Todo List
 
 ## Core
-- Variables Sass / variables natives
+- Variables Sass  --> OK
+- Variables natives  --> OK
 - Mixins Sass
-- Reset Global
-- Reset Typo
-- Reset Forms
-- Accessibility
+- Reset Global  --> OK
+- Reset Forms --> OK
+- Accessibility --> OK
 
 ## Utilities
 - Layout
@@ -21,6 +21,7 @@
 - Helpers
 
 ## Components
+- select --> OK
 - Buttons
 - Radio
 - Checkbox

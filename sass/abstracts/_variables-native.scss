@@ -1,8 +1,11 @@
-// ----------
-// Fonts zone
-// ----------
+/*
+ * Native CSS variables
+ */
 
-// Font families
+/*
+ * Font families
+ */
+
 :root {
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-family-headings : sans-serif;
@@ -10,20 +13,30 @@
   --line-height-base: 1.5;
 }
 
-// Font sizes (if html at 62.5%, then 1.6rem value is "16px" equivalent)
+/*
+ * Font sizes
+ * (62.5% on HTML, then 1.6rem base is "16px"equivalent)
+ */
+
 :root {
   --font-size-html : 62.5%;
   --font-size-base : 1.6rem;
 }
 
-// Line heights
+/*
+ * Line heights
+ */
+
 :root {
   --line-height-s    : 1.3;
   --line-height-base : 1.5;
   --line-height-l    : 1.7;
 }
 
-// Font weights
+/*
+ * Font weights
+ */
+
 :root {
   --weight-light   : 200;
   --weight-book    : 300;
@@ -32,7 +45,10 @@
   --weight-bold    : 700;
 }
 
-// Spacing variables
+/*
+ * Spacings
+ */
+
 :root {
   --spacer-tiny        : .5rem;
   --spacer-tiny-plus   : .7rem;
@@ -44,7 +60,10 @@
   --spacer-large-plus  : 6rem;
 }
 
-// Colors basic
+/*
+ * Colors
+ */
+
 :root {
   --white    : #fff;
   --black    : #000;
@@ -59,7 +78,10 @@
   --gray-900 : #212529
 }
 
-// Colors semantic
+/*
+ * Semantic colors
+ */
+
 :root {
   --color-base : var(--gray-900);
 
@@ -73,7 +95,10 @@
   --color-ghost   : transparent;
 }
 
-// Links
+/*
+ * Links
+ */
+
 :root {
   --link-color       : var(--gray-800);
   --link-color-hover : var(--gray-900);
@@ -81,7 +106,10 @@
   --link-decoration-hover : underline;
 }
 
-// Global components variables
+/*
+ * Global components
+ */
+
 :root {
   --margin-body             : 0;
   --border-radius           : 0;
