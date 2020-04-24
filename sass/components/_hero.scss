@@ -12,8 +12,8 @@
  * hero variables (you can change them)
  */
 
-:root {
-  --body-width: 600px; /* can be % too */
+.hero {
+  --remaining-space: calc((100vw - var(--width-body)) / 2);
 }
 
 /*
@@ -21,11 +21,9 @@
  */
 
 .hero {
-  --remaining-space: calc((100vw - var(--body-width)) / 2);
-
   width: 100vw;
   display: grid;
   transform: translateX(calc(var(--remaining-space) * -1));
-  grid-template-columns: var(--body-width);
+  grid-template-columns: var(--width-body);
   justify-content: center;
 }

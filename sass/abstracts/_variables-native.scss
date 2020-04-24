@@ -125,6 +125,13 @@
 
 :root {
   --margin-body             : 0;
+  --width-body              : auto;
   --border-radius           : 0;
   --border-radius-alternate : 6px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --width-body : 1024px;
+  }
 }
