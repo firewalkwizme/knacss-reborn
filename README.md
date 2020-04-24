@@ -33,7 +33,7 @@ Sass ou PostCSS absolument nécessaire pour nous :
 - Constructeurs de classes utilitaires 
 
 ## Core (indispensable)
-- Variables natives  --> OK
+- Variables natives (= celles qu'on peut utiliser en CSS pur)  --> OK
 - Reset Base  --> OK
 - Reset Forms --> OK
 - Reset Accessibility --> OK
