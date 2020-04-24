@@ -1,0 +1,31 @@
+/*
+ * HTML template example:
+ * <div class="container"> <!-- can be body -->
+ *   <div class="hero">
+ *   </div>
+ * </div>
+ * Source : https: //codepen.io/raphaelgoetter/pen/ZeryqR?editors=1100
+ */
+
+
+/*
+ * hero variables (you can change them)
+ */
+
+:root {
+  --body-width: 600px; /* can be % too */
+}
+
+/*
+ * hero styles
+ */
+
+.hero {
+  --remaining-space: calc((100vw - var(--body-width)) / 2);
+
+  width: 100vw;
+  display: grid;
+  transform: translateX(calc(var(--remaining-space) * -1));
+  grid-template-columns: var(--body-width);
+  justify-content: center;
+}
