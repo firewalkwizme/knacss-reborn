@@ -7,17 +7,63 @@ Reborn!
 TOUTSIMPLIFIER!
 
 
+# Todo List
+
+## knacss.scss
+
+KNACSS de base est constitué uniquement des fichiers "Core".
+
+Les fichiers "Utils" seront des briques optionnelles.
+
+
+## Sass / PostCSS 
+
 Sass ou PostCSS absolument nécessaire pour nous :
 
-- certaines variables indispensables (breakpoints)
-- rassemblement de fichiers (`@import`)
-- nestings
-- mixins et fonctions (respond-to, font-sizes, grid)
-- constructeur tels que $variants-list
-- constructeur de Grillade
-- constructeurs de classes utilitaires
+- Variables Sass :
+  - $breakpoints (indispensable)
+  - $variants-list (indispensable ?)
+- Mixins Sass : 
+  - respond-to (indispensable ?)
+  - font-sizes (indispensable ?)
+  - grid mixin (indispensable ?)
+- Rassemblement de fichiers (`@import`)
+- Nestings
+- Constructeurs de Grillade
+- Constructeurs de classes utilitaires 
 
-Sass non nécessaire :
+## Core (indispensable)
+- Variables natives  --> OK
+- Reset Base  --> OK
+- Reset Forms --> OK
+- Reset Accessibility --> OK
+- Reset Print --> OK
 
-- la plupart des variables de projet ou composants
-- 
+## Core Components (indispensable)
+- Select --> OK
+- Radio et Checkbox --> OK (cf. https://www.knacss.com/doc.html#inputs)
+- Buttons
+- Skip-links (liens d'évitement)
+- Burger Button (nécessite JS pour le touch)
+
+## Utils Components (complémentaire)
+- Switch --> OK
+- Citations (cf. https://www.knacss.com/doc.html#citations)
+- Tables (UI basique de tableau. cf. https://www.knacss.com/doc.html#tableaux)
+- Alerts (boîte d'information. cf. https://www.knacss.com/doc.html#alertes)
+- Tags (étiquette. cf. https://www.knacss.com/doc.html#tags)
+- Badges (truc arrondi de la taille du texte. cf. https://www.knacss.com/doc.html#tags)
+- Tabs (onglets, nécessite du JS. cf. https://www.knacss.com/doc.html#tabs)
+- Arrows (flèches. cf. https://www.knacss.com/doc.html#arrows)
+
+## Utilities (complémentaire)
+- Layout (que des classes flexbox. ex. `.flex-container` `.item-fluid` etc.)
+- Responsive (ex. `.large-hidden` `.medium-w25` `.medium-ma0` etc.)
+- Utilities (ex. `.u-italic` `.txtcenter` `.clearfix`  etc.)
+- Helpers (ex. `.w20` `.pts` `.mt0` etc.)
+- Grillade (indispensable ? complémentaire ?)
+
+## Delete (à supprimer)
+
+- Grillade version flexbox
+- wordpress
