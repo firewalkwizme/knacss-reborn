@@ -7,34 +7,35 @@
 
 ## knacss.scss
 
-Importing all the Core files. 
+KNACSS de base est constitué uniquement des fichiers "Core".
 
-Components, Utilities, Grillade are optional (?)
+Les fichiers "Utils" seront des briques optionnelles.
 
-## Sass
+
+## Sass / PostCSS 
 - Variables Sass :
-  - $breakpoints
-  - $variants-list
+  - $breakpoints (indispensable)
+  - $variants-list (indispensable ?)
 - Mixins Sass : 
-  - respond-to 
-  - font-sizes
-  - grid mixin
+  - respond-to (indispensable ?)
+  - font-sizes (indispensable ?)
+  - grid mixin (indispensable ?) 
 
-## Core
+## Core (indispensable)
 - Variables natives  --> OK
 - Reset Base  --> OK
 - Reset Forms --> OK
 - Reset Accessibility --> OK
 - Reset Print --> OK
 
-## Components (core)
+## Core Components (indispensable)
 - Select --> OK
 - Radio et Checkbox --> OK (cf. https://www.knacss.com/doc.html#inputs)
 - Buttons
 - Skip-links (liens d'évitement)
 - Burger Button (nécessite JS pour le touch)
 
-## Components (utils)
+## Utils Components (complémentaire)
 - Switch --> OK
 - Citations (cf. https://www.knacss.com/doc.html#citations)
 - Tables (UI basique de tableau. cf. https://www.knacss.com/doc.html#tableaux)
@@ -44,11 +45,14 @@ Components, Utilities, Grillade are optional (?)
 - Tabs (onglets, nécessite du JS. cf. https://www.knacss.com/doc.html#tabs)
 - Arrows (flèches. cf. https://www.knacss.com/doc.html#arrows)
 
-## Utilities
+## Utilities (complémentaire)
 - Layout (que des classes flexbox. ex. `.flex-container` `.item-fluid` etc.)
 - Responsive (ex. `.large-hidden` `.medium-w25` `.medium-ma0` etc.)
 - Utilities (ex. `.u-italic` `.txtcenter` `.clearfix`  etc.)
 - Helpers (ex. `.w20` `.pts` `.mt0` etc.)
-- Grillade
+- Grillade (indispensable ? complémentaire ?)
 
-## Vendor ?
+## Delete (à supprimer)
+
+- Grillade version flexbox
+- wordpress
