@@ -33,21 +33,22 @@ Sass ou PostCSS absolument nécessaire pour nous :
 - Constructeurs de classes utilitaires 
 
 ## Core (indispensable)
-- Variables natives (= celles qu'on peut utiliser en CSS pur)  --> OK
-- Reset Base  --> OK
-- Reset Forms --> OK
-- Reset Accessibility --> OK
-- Reset Print --> OK
+- Variables natives (= celles qu'on peut utiliser en CSS pur)  --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/abstracts/_variables-native.scss)
+- Reset Base  --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/base/_reset-base.scss)
+- Reset Forms --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/base/_reset-forms.scss)
+- Reset Accessibility --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/base/_reset-accessibility.scss)
+- Reset Print --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/base/_reset-print.scss)
 
 ## Core Components (indispensable)
-- Select --> OK
-- Radio et Checkbox --> OK (cf. https://www.knacss.com/doc.html#inputs)
+- Select --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/components/_select.scss)
+- Radio --> OK (cf. https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/components/_radio.scss)
+- Checkbox --> OK (cf. https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/components/_checkbox.scss)
+- Switch --> OK (https://github.com/raphaelgoetter/knacss-reborn/blob/master/sass/components/_switch.scss)
 - Buttons
 - Skip-links (liens d'évitement)
 - Burger Button (nécessite JS pour le touch)
 
 ## Utils Components (complémentaire)
-- Switch --> OK
 - Citations (cf. https://www.knacss.com/doc.html#citations)
 - Tables (UI basique de tableau. cf. https://www.knacss.com/doc.html#tableaux)
 - Alerts (boîte d'information. cf. https://www.knacss.com/doc.html#alertes)
