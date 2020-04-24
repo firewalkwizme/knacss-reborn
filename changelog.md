@@ -20,13 +20,7 @@ Components, Utilities, Grillade are optional.
 - Reset Base  --> OK
 - Reset Forms --> OK
 - Reset Accessibility --> OK
-- Print --> OK
-
-## Utilities
-- Layout
-- Responsive
-- Utilities
-- Helpers
+- Reset Print --> OK
 
 ## Components (core)
 - Select --> OK
@@ -36,7 +30,7 @@ Components, Utilities, Grillade are optional.
 - Skip-links
 - Burger Button
 
-## Components (add-ons)
+## Components (utils)
 - Switch --> OK
 - Tables
 - Alerts
@@ -45,6 +39,11 @@ Components, Utilities, Grillade are optional.
 - Tabs
 - Arrows
 
-## Grillade
+## Utilities
+- Layout
+- Responsive
+- Utilities
+- Helpers
+- Grillade
 
 ## Vendor ?
