@@ -11,7 +11,7 @@
 
 .checkbox {
   --checkbox-color: var(--white);
-  --checkbox-background: var(--forms-color);
+  --checkbox-background: var(--color-forms);
   --checkbox-size: 2rem;
   --checkbox-border-radius: 4px;
 }
@@ -31,7 +31,7 @@
   height: var(--checkbox-size);
   vertical-align: text-bottom;
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--forms-color);
+  box-shadow: inset 0 0 0 1px var(--color-forms);
   background-color: var(--checkbox-color);
   transition: background-color .15s;
   cursor: pointer;

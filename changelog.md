@@ -19,7 +19,7 @@ Components, Utilities, Grillade are optional.
 - Variables natives  --> OK
 - Reset Base  --> OK
 - Reset Forms --> OK
-- Accessibility --> OK
+- Reset Accessibility --> OK
 - Print --> OK
 
 ## Utilities

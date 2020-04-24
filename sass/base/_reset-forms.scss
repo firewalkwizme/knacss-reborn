@@ -44,7 +44,7 @@ input:not([type="radio"]):not([type="checkbox"])
 select,
 textarea {
   border: 0;
-  box-shadow: 0 0 0 1px var(--forms-color) inset;
+  box-shadow: 0 0 0 1px var(--color-forms) inset;
   padding: var(--spacer-tiny) var(--spacer-small);
 }
 

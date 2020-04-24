@@ -56,8 +56,10 @@
   --spacer-small-plus  : 1.5rem;
   --spacer-medium      : 2rem;
   --spacer-medium-plus : 3rem;
-  --spacer-large       : 4rem;
-  --spacer-large-plus  : 6rem;
+  --spacer-large       : 5rem;
+  --spacer-large-plus  : 8rem;
+  --spacer-extralarge  : 10rem;
+  --spacer-ultralarge  : 20rem;
 }
 
 /*
@@ -67,15 +69,16 @@
 :root {
   --white    : #fff;
   --black    : #000;
-  --gray-100 : #f8f9fa;
-  --gray-200 : #e7e9ed;
-  --gray-300 : #dee2e6;
-  --gray-400 : #ced4da;
-  --gray-500 : #acb3c2;
-  --gray-600 : #727e96;
-  --gray-700 : #454d5d;
-  --gray-800 : #333;
-  --gray-900 : #212529
+
+  --color-gray-lightest : #dee2e6;
+  --color-gray-lighter : #ced4da;
+  --color-gray-light : #acb3c2;
+  --color-gray-base : #727e96;
+  --color-gray-dark : #454d5d;
+  --color-gray-darker : #333;
+  --color-gray-darkest : #212529;
+
+  --color-blue-base : #0275D8;
 }
 
 /*
@@ -83,16 +86,28 @@
  */
 
 :root {
-  --color-base : var(--gray-900);
+  
+  --color-text-primary   : #212529;
+  --color-text-alternate : #727e96;
+  --color-text-heading   : #454d5d;
+  --color-text-inverted  : var(--white);
 
-  --color-primary : #0275D8;
-  --color-success : #5CB85C;
-  --color-info    : #5BC0DE;
-  --color-warning : #F0AD4E;
-  --color-danger  : #D9534F;
-  --color-inverse : var(--gray-800);
-  --color-muted   : var(--gray-200);
-  --color-ghost   : transparent;
+  --color-link-primary   : #333;
+  --color-link-alternate : #212529;
+  
+  --color-background-dark  : #454d5d;
+  --color-background-light : #dee2e6;
+  --color-background-body  : var(--white);
+  
+  --color-state-success : #5CB85C;
+  --color-state-info    : #5BC0DE;
+  --color-state-warning : #F0AD4E;
+  --color-state-danger  : #D9534F;
+  --color-state-muted   : #e7e9ed;
+  --color-state-ghost   : transparent;
+
+  --color-forms           : #333;
+  --color-forms-alternate : #333;
 }
 
 /*
@@ -100,8 +115,6 @@
  */
 
 :root {
-  --link-color       : var(--gray-800);
-  --link-color-hover : var(--gray-900);
   --link-decoration  : underline;
   --link-decoration-hover : underline;
 }
@@ -114,6 +127,4 @@
   --margin-body             : 0;
   --border-radius           : 0;
   --border-radius-alternate : 6px;
-  --forms-color             : var(--gray-800);
-  --forms-color-alternate   : var(--gray-800);
 }

@@ -33,8 +33,27 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  background-color: var(--white);
-  color: var(--color-base);
+  background-color: var(--color-background-body);
+  color: var(--color-text-primary);
+}
+
+/*
+ * Headings
+ */
+
+h1, 
+.h1-like,
+h2,
+.h2-like,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like {
+  color: var(--color-text-heading);
 }
 
 /*
@@ -42,14 +61,14 @@ body {
  */
 
 a {
-  color: var(--link-color);
+  color: var(--color-link-primary);
   text-decoration: var(--link-decoration);
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: var(--link-color-hover);
+  color: var(--color-link-alternate);
   text-decoration: var(--link-decoration-hover);
 }
 
@@ -69,11 +88,18 @@ abbr[title] {
  */
 
 h1,
+.h1-like,
 h2,
+.h2-like,
 h3,
+.h3-like,
 h4,
+.h4-like,
 h5,
+.h5-like,
 h6,
+.h6-like,
+dt,
 dd {
   margin-top: 0;
   margin-bottom: var(--spacer-medium);

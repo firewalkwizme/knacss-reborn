@@ -10,7 +10,7 @@
  */
 
 .radio {
-  --radio-color: var(--forms-color);
+  --radio-color: var(--color-forms);
   --radio-background: var(--white);
   --radio-size: 2rem;
   --radio-border-radius: 50%;
@@ -31,7 +31,7 @@
   height: var(--radio-size);
   vertical-align: text-bottom;
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--forms-color);
+  box-shadow: inset 0 0 0 1px var(--color-forms);
   background-color: var(--radio-background);
   transition: background-size .15s;
   cursor: pointer;

@@ -40,15 +40,15 @@ $switch-border-radius: 3em !default;
 $table-border               : $gray-500 !default;
 $table-caption-color        : $gray-800 !default;
 $table-background           : transparent !default;
-$table-head-color           : $color-base !default;
+$table-head-color           : $color-text-primary !default;
 $table-head-background      : transparent !default;
-$table-footer-color         : $color-base !default;
+$table-footer-color         : $color-text-primary !default;
 $table-footer-background    : transparent !default;
 
 // Components: buttons, badges, alerts color variants list
 // Convention is: name - background-color - color - border
 $variants-list: (
-  (primary,    $color-primary,    $white,    none),
+  (primary,    $color-text-primary,    $white,    none),
   (success,    $color-success,    $white,    none),
   (info,       $color-info,       $black,    none),
   (warning,    $color-warning,    $black,    none),
@@ -60,7 +60,7 @@ $variants-list: (
 // Component: tabs
 $tabs-border            : $gray-200 !default;
 $tabs-active-border     : $gray-800 !default;
-$tabs-color             : $color-base !default;
+$tabs-color             : $color-text-primary !default;
 $tabs-active-color      : $gray-800 !default;
 $tabs-background        : transparent !default;
 $tabs-active-background : transparent !default;

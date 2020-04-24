@@ -63,8 +63,10 @@
     --spacer-small-plus : 1.5rem;
     --spacer-medium : 2rem;
     --spacer-medium-plus : 3rem;
-    --spacer-large : 4rem;
-    --spacer-large-plus : 6rem;
+    --spacer-large : 5rem;
+    --spacer-large-plus : 8rem;
+    --spacer-extralarge : 10rem;
+    --spacer-ultralarge : 20rem;
     }
 
     /*
@@ -74,15 +76,16 @@
     :root {
     --white : #fff;
     --black : #000;
-    --gray-100 : #f8f9fa;
-    --gray-200 : #e7e9ed;
-    --gray-300 : #dee2e6;
-    --gray-400 : #ced4da;
-    --gray-500 : #acb3c2;
-    --gray-600 : #727e96;
-    --gray-700 : #454d5d;
-    --gray-800 : #333;
-    --gray-900 : #212529
+
+    --color-gray-lightest : #dee2e6;
+    --color-gray-lighter : #ced4da;
+    --color-gray-light : #acb3c2;
+    --color-gray-base : #727e96;
+    --color-gray-dark : #454d5d;
+    --color-gray-darker : #333;
+    --color-gray-darkest : #212529;
+
+    --color-blue-base : #0275D8;
     }
 
     /*
@@ -90,16 +93,28 @@
     */
 
     :root {
-    --color-base : var(--gray-900);
 
-    --color-primary : #0275D8;
-    --color-success : #5CB85C;
-    --color-info : #5BC0DE;
-    --color-warning : #F0AD4E;
-    --color-danger : #D9534F;
-    --color-inverse : var(--gray-800);
-    --color-muted : var(--gray-200);
-    --color-ghost : transparent;
+    --color-text-primary : #212529;
+    --color-text-alternate : #727e96;
+    --color-text-heading : #454d5d;
+    --color-text-inverted : var(--white);
+
+    --color-link-primary : #333;
+    --color-link-alternate : #212529;
+
+    --color-background-dark : #454d5d;
+    --color-background-light : #dee2e6;
+    --color-background-body : var(--white);
+
+    --color-state-success : #5CB85C;
+    --color-state-info : #5BC0DE;
+    --color-state-warning : #F0AD4E;
+    --color-state-danger : #D9534F;
+    --color-state-muted : #e7e9ed;
+    --color-state-ghost : transparent;
+
+    --color-forms : #333;
+    --color-forms-alternate : #333;
     }
 
     /*
@@ -107,8 +122,6 @@
     */
 
     :root {
-    --link-color : var(--gray-800);
-    --link-color-hover : var(--gray-900);
     --link-decoration : underline;
     --link-decoration-hover : underline;
     }
@@ -118,210 +131,247 @@
     */
 
     :root {
-    --margin-body : 5rem;
+    --margin-body : 0;
     --border-radius : 0;
     --border-radius-alternate : 6px;
-    --forms-color : var(--gray-800);
-    --forms-color-alternate : var(--gray-800);
     }
+/* ----------------------------- */
+/* ==Reset (base) */
+/* ----------------------------- */
 
-    /* ----------------------------- */
-    /* ==Reset (base) */
-    /* ----------------------------- */
+/*
+* 1. Switch to border-box model for all elements
+* 2. Avoid min-width: auto and min-height: auto on flex and grid children
+*/
 
-    /*
-    * 1. Switch to border-box model for all elements
-    * 2. Avoid min-width: auto and min-height: auto on flex and grid children
-    */
+*,
+*::before,
+*::after {
+box-sizing: border-box; /* 1 */
+min-width: 0; /* 2 */
+min-height: 0; /* 2 */
+}
 
-    *,
-    *::before,
-    *::after {
-    box-sizing: border-box; /* 1 */
-    min-width: 0; /* 2 */
-    min-height: 0; /* 2 */
-    }
+/*
+* 1. Remove the grey highlight on links in iOS
+* 2. Prevent orientation font changes in iOS
+* 3. Breaks words to prevent overflow in all browsers
+*/
 
-    /*
-    * 1. Remove the grey highlight on links in iOS
-    * 2. Prevent orientation font changes in iOS
-    * 3. Breaks words to prevent overflow in all browsers
-    */
+html {
+font-size: var(--font-size-html);
+-webkit-tap-highlight-color: transparent; /* 1 */
+-webkit-text-size-adjust: 100%; /* 2 */
+word-break: break-word; /* 3 */
+}
 
-    html {
-    font-size: var(--font-size-html);
-    -webkit-tap-highlight-color: transparent; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    word-break: break-word; /* 3 */
-    }
+body {
+margin: var(--margin-body);
+font-family: var(--font-family-base);
+font-size: var(--font-size-base);
+line-height: var(--line-height-base);
+background-color: var(--color-background-body);
+color: var(--color-text-primary);
+}
 
-    body {
-    margin: var(--margin-body);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-    background-color: var(--white);
-    color: var(--color-base);
-    }
+/*
+* Headings
+*/
 
-    /*
-    * Links
-    */
+h1,
+.h1-like,
+h2,
+.h2-like,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like {
+color: var(--color-text-heading);
+}
 
-    a {
-    color: var(--link-color);
-    text-decoration: var(--link-decoration);
-    }
+/*
+* Links
+*/
 
-    a:focus,
-    a:hover,
-    a:active {
-    color: var(--link-color-hover);
-    text-decoration: var(--link-decoration-hover);
-    }
+a {
+color: var(--color-link-primary);
+text-decoration: var(--link-decoration);
+}
 
-    /**
-    * 1. Remove the bottom border in Chrome 57-
-    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-    */
+a:focus,
+a:hover,
+a:active {
+color: var(--color-link-alternate);
+text-decoration: var(--link-decoration-hover);
+}
 
-    abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
-    }
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
 
-    /*
-    * Vertical rythm
-    */
+abbr[title] {
+border-bottom: none; /* 1 */
+text-decoration: underline; /* 2 */
+text-decoration: underline dotted; /* 2 */
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    dd {
-    margin-top: 0;
-    margin-bottom: var(--spacer-medium);
-    }
+/*
+* Vertical rythm
+*/
 
-    p,
-    address,
-    ol,
-    ul,
-    dl,
-    blockquote,
-    pre {
-    margin-top: 0;
-    margin-bottom: var(--spacer-small);
-    }
+h1,
+.h1-like,
+h2,
+.h2-like,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like,
+dt,
+dd {
+margin-top: 0;
+margin-bottom: var(--spacer-medium);
+}
 
-    /*
-    * Nested elements
-    */
+p,
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre {
+margin-top: 0;
+margin-bottom: var(--spacer-small);
+}
 
-    ol ol,
-    ol ul,
-    ul ol,
-    ul ul,
-    li ul,
-    li ol,
-    nav ul,
-    nav ol,
-    li p,
-    li .p-like {
-    margin-top: 0;
-    margin-bottom: 0;
-    }
+/*
+* Nested elements
+*/
 
-    /*
-    * Lists
-    */
+ol ol,
+ol ul,
+ul ol,
+ul ul,
+li ul,
+li ol,
+nav ul,
+nav ol,
+li p,
+li .p-like {
+margin-top: 0;
+margin-bottom: 0;
+}
 
-    ul,
-    ol {
-    padding-left: var(--spacer-medium);
-    }
+/*
+* Lists
+*/
 
-    nav ul,
-    nav ol {
-    list-style: none;
-    padding: 0;
-    }
+ul,
+ol {
+padding-left: var(--spacer-medium);
+}
 
-    /*
-    * Embed content
-    */
+nav ul,
+nav ol {
+list-style: none;
+padding: 0;
+}
 
-    audio,
-    canvas,
-    iframe,
-    img,
-    svg,
-    video {
-    vertical-align: middle;
-    }
+/*
+* Embed content
+*/
 
-    img,
-    table,
-    td,
-    blockquote,
-    pre,
-    code,
-    input,
-    textarea,
-    select,
-    video,
-    svg,
-    iframe {
-    max-width: 100%;
-    }
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+vertical-align: middle;
+}
 
-    iframe,
-    img,
-    input,
-    select,
-    textarea {
-    height: auto;
-    }
+img,
+table,
+td,
+blockquote,
+pre,
+code,
+input,
+textarea,
+select,
+video,
+svg,
+iframe {
+max-width: 100%;
+}
 
-    img {
-    border-style: none;
-    }
+iframe,
+img,
+input,
+select,
+textarea {
+height: auto;
+}
 
-    /**
-    * Remove the border on iframes in all browsers
-    */
+img {
+border-style: none;
+}
 
-    iframe {
-    border-style: none;
-    }
+/**
+* Remove the border on iframes in all browsers
+*/
 
-    /*
-    * Fill color matching to text color
-    */
+iframe {
+border-style: none;
+}
 
-    svg:not([fill]) {
-    fill: currentColor;
-    }
+/*
+* Fill color matching to text color
+*/
 
-    /*
-    * Hide the overflow in IE
-    */
+svg:not([fill]) {
+fill: currentColor;
+}
 
-    svg:not(:root) {
-    overflow: hidden;
-    }
+/*
+* Hide the overflow in IE
+*/
 
-    /*
-    * Tables
-    */
+svg:not(:root) {
+overflow: hidden;
+}
 
-    table {
-    border-collapse: collapse;
-    }
+/*
+* Tables
+*/
 
+table {
+border-collapse: collapse;
+}
+
+/*
+* Rulers
+*/
+
+hr {
+box-sizing: content-box;
+height: 0;
+overflow: visible;
+border: 0;
+border-top: 1px solid;
+margin: var(--spacer-medium) 0;
+clear: both;
+color: inherit;
+}
     /*
     * Remove the tapping delay on clickable elements in all browsers .
     */
@@ -368,7 +418,7 @@
     select,
     textarea {
     border: 0;
-    box-shadow: 0 0 0 1px var(--forms-color) inset;
+    box-shadow: 0 0 0 1px var(--color-forms) inset;
     padding: var(--spacer-tiny) var(--spacer-small);
     }
 
@@ -586,7 +636,7 @@
 
     .checkbox {
     --checkbox-color: var(--white);
-    --checkbox-background: var(--forms-color);
+    --checkbox-background: var(--color-forms);
     --checkbox-size: 2rem;
     --checkbox-border-radius: 4px;
     }
@@ -637,7 +687,7 @@ opacity: .6;
 }
 
 .radio {
---radio-color: var(--forms-color);
+--radio-color: var(--color-forms);
 --radio-background: var(--white);
 --radio-size: 2rem;
 --radio-border-radius: 50%;
@@ -658,7 +708,7 @@ width: var(--radio-size);
 height: var(--radio-size);
 vertical-align: text-bottom;
 outline: 0;
-box-shadow: inset 0 0 0 1px var(--forms-color);
+box-shadow: inset 0 0 0 1px var(--color-forms);
 background-color: var(--radio-background);
 transition: background-size .15s;
 cursor: pointer;
@@ -708,7 +758,7 @@ display: none;
 */
 
 .switch {
---switch-color: var(--forms-color);
+--switch-color: var(--color-forms);
 --switch-background: var(--white);
 --switch-size: 2rem;
 --switch-border-radius: 1rem;
@@ -732,14 +782,14 @@ height: var(--switch-size);
 line-height: var(--switch-size);
 vertical-align: text-bottom;
 outline: 0;
-box-shadow: inset 0 0 0 1px var(--forms-color);
+box-shadow: inset 0 0 0 1px var(--color-forms);
 
 
 transition: background-size .15s;
 cursor: pointer;
 
 background-color: var(--switch-background);
-background-image: radial-gradient(circle, var(--gray-400) 50%, transparent 50%);
+background-image: radial-gradient(circle, var(--color-gray-light) 50%, transparent 50%);
 background-position: left center;
 background-repeat: no-repeat;
 background-size: var(--switch-size) var(--switch-size);
