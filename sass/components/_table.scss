@@ -1,0 +1,68 @@
+/*
+ * component table
+ */
+
+/*
+ * table variables (you can change them)
+ */
+
+:root {
+  --table-border-color      : var(--color-gray-base);
+  --table-caption-color     : var(--color-gray-darker);
+  --table-background        : transparent;
+  --table-head-color        : var(--color-text-primary);
+  --table-head-background   : transparent;
+  --table-footer-color      : var(--color-text-primary);
+  --table-footer-background : transparent;
+}
+
+/*
+ * table styles
+ */
+
+table,
+.table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: top;
+  margin-bottom: var(--spacer-medium);
+}
+
+.table {
+  display: table;
+  border: 1px solid var(--table-border-color);
+  background: var(--table-background);
+}
+
+.table caption {
+  caption-side: bottom;
+  padding: var(--spacer-small);
+  color: var(--table-caption-color);
+  font-style: italic;
+  text-align: right;
+}
+
+.table td,
+.table th {
+  padding: 0.3rem 0.6rem;
+  min-width: var(--spacer-medium);
+  vertical-align: top;
+  border: 1px dotted var(--table-border-color);
+  text-align: left;
+  cursor: default;
+}
+
+.table thead {
+  color: var(--table-head-color);
+  background: var(--table-head-background);
+}
+
+.table--zebra tbody tr:nth-child(odd) {
+  background: var(--color-gray-lighter);
+}
+
+.table--auto {
+  table-layout: auto;
+}

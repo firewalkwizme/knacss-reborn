@@ -89,42 +89,6 @@
   border-collapse: collapse;
 }
 
-/* simple blocks alignment */
-
-.left,
-.u-left {
-  margin-right: auto;
-}
-
-.right,
-.u-right {
-  margin-left: auto;
-}
-
-.center,
-.u-center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Global Micro Layout */
-/* ------------------- */
-
-/* "BFC" Block Formating Context */
-
-.bfc,
-.u-bfc {
-  display: flow-root;
-}
-
-
-/* inline-block */
-
-.inbl,
-.u-inbl {
-  display: inline-block;
-  vertical-align: top;
-}
 
 /* State Helpers */
 /* ------------- */

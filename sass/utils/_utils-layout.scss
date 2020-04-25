@@ -1,6 +1,39 @@
-/* ----------------------------- */
-/* ==Global Micro Layout         */
-/* ----------------------------- */
+/*
+ * utils layout
+ */
+
+/* "BFC" Block Formating Context */
+
+.bfc,
+.u-bfc {
+  display: flow-root;
+}
+
+/* simple blocks alignment */
+
+.left,
+.u-left {
+  margin-right: auto;
+}
+
+.right,
+.u-right {
+  margin-left: auto;
+}
+
+.center,
+.u-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* inline-block */
+
+.inbl,
+.u-inbl {
+  display: inline-block;
+  vertical-align: top;
+}
 
 /* Flexbox layout is KNACSS choice
 http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
@@ -14,26 +47,28 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 
 .flex-container--row,
 .flex-row {
-  @extend .flex-container;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex-container--column,
 .flex-column {
-  @extend .flex-container;
+  display: flex;
   flex-direction: column;
 }
 
 .flex-container--row-reverse,
 .flex-row-reverse {
-  @extend .flex-container;
+  display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .flex-container--column-reverse,
 .flex-column-reverse {
-  @extend .flex-container;
+  display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
 }
@@ -59,7 +94,6 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 
 .flex-item-center,
-.item-center,
-.mr-auto {
+.item-center {
   margin: auto;
 }
