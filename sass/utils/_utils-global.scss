@@ -1,0 +1,153 @@
+/*
+ * utils typo
+ */
+
+.u-bold {
+  font-weight: var(--weight-bold);
+}
+
+.u-italic {
+  font-style: italic;
+}
+
+.u-normal {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-smaller {
+  font-size: 0.6em;
+}
+
+.u-small {
+  font-size: 0.8em;
+}
+
+.u-big {
+  font-size: 1.2em;
+}
+
+.u-bigger {
+  font-size: 1.5em;
+}
+
+.u-biggest {
+  font-size: 2em;
+}
+
+.u-txt-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.u-txt-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*
+ * utils alignment
+ */
+
+.txtleft,
+.u-txt-left {
+  text-align: left;
+}
+
+.txtright,
+.u-txt-right {
+  text-align: right;
+}
+
+.txtcenter,
+.u-txt-center {
+  text-align: center;
+}
+
+/* blocks that need to be placed under floats */
+
+.clear,
+.u-clear {
+  clear: both;
+}
+
+/* blocks that must contain floats */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  border-collapse: collapse;
+}
+
+/* simple blocks alignment */
+
+.left,
+.u-left {
+  margin-right: auto;
+}
+
+.right,
+.u-right {
+  margin-left: auto;
+}
+
+.center,
+.u-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Global Micro Layout */
+/* ------------------- */
+
+/* "BFC" Block Formating Context */
+
+.bfc,
+.u-bfc {
+  display: flow-root;
+}
+
+
+/* inline-block */
+
+.inbl,
+.u-inbl {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* State Helpers */
+/* ------------- */
+
+/* invisible for all */
+.is-hidden,
+.js-hidden,
+[hidden] {
+  display: none;
+}
+
+.is-disabled,
+.js-disabled,
+[disabled],
+.is-disabled ~ label,
+[disabled] ~ label {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+  filter: grayscale(1);
+}
+
+ul.is-unstyled,
+ul.unstyled {
+  list-style: none;
+  padding-left: 0;
+}
