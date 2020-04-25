@@ -1,0 +1,184 @@
+/*
+ * utils spacers
+ */
+
+
+.man {
+  margin: 0;
+}
+
+.pan {
+  padding: 0;
+}
+
+.mas {
+  margin: var(--spacer-small);
+}
+
+.mam {
+  margin: var(--spacer-medium);
+}
+
+.mal {
+  margin: var(--spacer-large);
+}
+
+.pas {
+  padding: var(--spacer-small);
+}
+
+.pam {
+  padding: var(--spacer-medium);
+}
+
+.pal {
+  padding: var(--spacer-large);
+}
+
+.mtn {
+  margin-top: 0;
+}
+
+.mts {
+  margin-top: var(--spacer-small);
+}
+
+.mtm {
+  margin-top: var(--spacer-medium);
+}
+
+.mtl {
+  margin-top: var(--spacer-large);
+}
+
+.mrn {
+  margin-right: 0;
+}
+
+.mrs {
+  margin-right: var(--spacer-small);
+}
+
+.mrm {
+  margin-right: var(--spacer-medium);
+}
+
+.mrl {
+  margin-right: var(--spacer-large);
+}
+
+.mbn {
+  margin-bottom: 0;
+}
+
+.mbs {
+  margin-bottom: var(--spacer-small);
+}
+
+.mbm {
+  margin-bottom: var(--spacer-medium);
+}
+
+.mbl {
+  margin-bottom: var(--spacer-large);
+}
+
+.mln {
+  margin-left: 0;
+}
+
+.mls {
+  margin-left: var(--spacer-small);
+}
+
+.mlm {
+  margin-left: var(--spacer-medium);
+}
+
+.mll {
+  margin-left: var(--spacer-large);
+}
+
+.mauto {
+  margin: auto;
+}
+
+.mtauto {
+  margin-top: auto;
+}
+
+.mrauto {
+  margin-right: auto;
+}
+
+.mbauto {
+  margin-bottom: auto;
+}
+
+.mlauto {
+  margin-left: auto;
+}
+
+.ptn {
+  padding-top: 0;
+}
+
+.pts {
+  padding-top: var(--spacer-small);
+}
+
+.ptm {
+  padding-top: var(--spacer-medium);
+}
+
+.ptl {
+  padding-top: var(--spacer-large);
+}
+
+.prn {
+  padding-right: 0;
+}
+
+.prs {
+  padding-right: var(--spacer-small);
+}
+
+.prm {
+  padding-right: var(--spacer-medium);
+}
+
+.prl {
+  padding-right: var(--spacer-large);
+}
+
+.pbn {
+  padding-bottom: 0;
+}
+
+.pbs {
+  padding-bottom: var(--spacer-small);
+}
+
+.pbm {
+  padding-bottom: var(--spacer-medium);
+}
+
+.pbl {
+  padding-bottom: var(--spacer-large);
+}
+
+.pln {
+  padding-left: 0;
+}
+
+.pls {
+  padding-left: var(--spacer-small);
+}
+
+.plm {
+  padding-left: var(--spacer-medium);
+}
+
+.pll {
+  padding-left: var(--spacer-large);
+}

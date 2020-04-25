@@ -132,8 +132,15 @@
 
     :root {
     --margin-body : 0;
+    --width-body : auto;
     --border-radius : 0;
     --border-radius-alternate : 6px;
+    }
+
+    @media (min-width: 1024px) {
+    :root {
+    --width-body : 1024px;
+    }
     }
 /* ----------------------------- */
 /* ==Reset (base) */
@@ -816,6 +823,27 @@ background-position: right center;
 background-color: var(--switch-color);
 }
 
+.hero {
+--remaining-space: calc((100vw - var(--width-body)) / 2);
+}
+
+/*
+* hero styles
+*/
+
+body {
+  width: var(--width-body);
+  margin: auto;
+}
+
+.hero {
+width: 100vw;
+display: grid;
+transform: translateX(calc(var(--remaining-space) * -1));
+grid-template-columns: var(--width-body);
+justify-content: center;
+}
+
   </style>
   <title>sandbox</title>
 </head>
@@ -893,6 +921,11 @@ It was a dark and stormy night...
   <li>tomate</li>
   <li>oignons</li>
 </ol>
+
+<div class="hero" style="background-color: pink;">
+  <h1>I need a hero!</h1>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur voluptatum ex officiis corrupti perspiciatis aliquid nulla suscipit esse officia delectus odio, quia eos voluptas alias fuga, aperiam id natus?
+</div>
 
 https://github.com/raphaelgoetter/knacss-reborn
 
