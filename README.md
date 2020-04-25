@@ -58,13 +58,14 @@ Sass ou PostCSS absolument nécessaire pour nous :
 - Arrows (flèches. cf. https://www.knacss.com/doc.html#arrows)
 
 ## Utilities (complémentaire)
-- Layout (que des classes flexbox. ex. `.flex-container` `.item-fluid` etc.)
 - Responsive (ex. `.large-hidden` `.medium-w25` `.medium-ma0` etc.)
-- Utilities (ex. `.u-italic` `.txtcenter` `.clearfix`  etc.)
-- Helpers (ex. `.w20` `.pts` `.mt0` etc.)
+- Utils global (ex. `.u-italic` `.txtcenter` `.clearfix`  etc.)
+- Utils spacers (ex. `.pts` `.mt0` etc.)
 - Grillade (indispensable ? complémentaire ?)
 
 ## Delete (à supprimer)
 
+- Layout (que des classes flexbox. ex. `.flex-container` `.item-fluid` etc.)
 - Grillade version flexbox
 - wordpress
+- Utilities width (ex. `.w20` etc.)
