@@ -4,37 +4,42 @@
 * Licence WTFPL http://www.wtfpl.net/
 */
 
-// WARNING : you should comment the following @import (variables)
-// and move variables file from KNACSS folder to your own project folder!
-@import "abstracts/variables";
+// WARNING : Only Core is imported by default. Just add other files if you need them.
 
-@import "abstracts/mixins";
 
-// Core Libraries
-@import "base/reset";        // basic reset
-@import "base/reset-forms";  // reset on forms and fields
-@import "base/accessibility";  // good practices
-@import "base/print";        // print quick reset
-@import "base/layout";       // alignment, modules, positionning
+// CORE
+@import "abstracts/variables";           // CSS variables for project
+@import "abstracts/breakpoints-sass";    // Sass variables and mixins
 
-// Grid System by default (Grid Layout). 
-// File prefixed by an underscore, in order to compile.
-@import "base/grillade-grid"; // grid system with Grid Layout
+// CORE COMPONENTS
+@import "base/reset-base";
+@import "base/reset-accessibility";
+@import "base/reset-forms";
+@import "base/reset-print";
 
-// Components
-@import "components/alerts";     // alerts styles
-@import "components/arrows";     // arrows styles
-@import "components/badges";     // badges styles
-@import "components/buttons";    // buttons styles
-@import "components/checkbox";   // checkbox, radio, switch styles
-@import "components/forms";      // forms consistency and styles
-@import "components/media";      // media object
-@import "components/skip-links"; // skip links
-@import "components/tables";     // data tables consistency
-@import "components/tabs";       // tabs styles
-@import "components/tags";       // tags styles
+@import "components/select";
+@import "components/radio";
+@import "components/checkbox";
+@import "components/switch";
+@import "components/button";    // TODO
+@import "components/skip-links";
+@import "components/burger";
 
-// Utilities
-@import "base/utilities";    // width and spacer helpers
-@import "base/responsive";   // Responsive Web Design helpers
-// @import "base/wordpress"; // WordPress reset and basic styles
+// UTILS
+@import "utils/grillade";       // grid system with Grid Layout
+
+// UTILS COMPONENTS
+@import "components/alert";     // alert styles
+@import "components/arrow";     // arrow styles
+@import "components/badge";     // badge styles
+@import "components/table";     // data table styles
+@import "components/tab";       // tab styles
+@import "components/tag";       // tag styles
+
+
+
+// TODO CORE OR NOT ?
+@import "utils/utils-layout";
+@import "utils/utils-global";
+@import "utils/utils-spacers";
+@import "utils/utils-responsive"; // TODO

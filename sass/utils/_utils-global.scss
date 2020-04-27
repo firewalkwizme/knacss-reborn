@@ -73,25 +73,10 @@
   text-align: center;
 }
 
-/* blocks that need to be placed under floats */
 
-.clear,
-.u-clear {
-  clear: both;
-}
-
-/* blocks that must contain floats */
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-  border-collapse: collapse;
-}
-
-
-/* State Helpers */
-/* ------------- */
+/*
+ * state helpers
+ */
 
 /* invisible for all */
 .is-hidden,
