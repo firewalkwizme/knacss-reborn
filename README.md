@@ -14,13 +14,12 @@ Principe de briques modulaires :
 
 
 ```scss
-
 // WARNING : Only Core is imported by default. Just add other files if you need them.
 
 
 // CORE
 @import "abstracts/variables";           // CSS variables for project
-@import "abstracts/breakpoints-sass";    // Sass variables and mixins
+@import "abstracts/breakpoints-sass";    // Sass variables and mixins TODO
 
 // CORE COMPONENTS
 @import "base/reset-base";
@@ -40,12 +39,12 @@ Principe de briques modulaires :
 @import "utils/grillade";       // grid system with Grid Layout
 
 // UTILS COMPONENTS
-@import "components/alert";     // alert styles
-@import "components/arrow";     // arrow styles
-@import "components/badge";     // badge styles
-@import "components/table";     // data table styles
-@import "components/tab";       // tab styles
-@import "components/tag";       // tag styles
+@import "components/alert";     // alert styles TODO
+@import "components/arrow";     // arrow styles TODO
+@import "components/badge";     // badge styles TODO
+@import "components/table";     // data table styles TODO
+@import "components/tab";       // tab styles TODO
+@import "components/tag";       // tag styles TODO
 
 
 
