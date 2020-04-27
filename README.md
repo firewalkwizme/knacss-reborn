@@ -2,7 +2,7 @@
 
 Reborn!
 
-![knacki](https://github.com/raphaelgoetter/knacss-reborn/blob/master/knacki.png)]
+![knacki](https://github.com/raphaelgoetter/knacss-reborn/blob/master/knacki.png)
 
 
 # Todo List
