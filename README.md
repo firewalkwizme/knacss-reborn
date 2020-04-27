@@ -7,9 +7,10 @@ Reborn!
 
 ## knacss.scss
 
-KNACSS de base est constitué uniquement des fichiers "Core".
+Principe de briques modulaires :
 
-Les fichiers "Utils" seront des briques optionnelles.
+- KNACSS de base est constitué uniquement des fichiers "Core".
+- Les fichiers "Utils" seront des briques optionnelles (= les `@import` seront commentés par défaut).
 
 
 ```scss
