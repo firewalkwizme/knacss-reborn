@@ -42,7 +42,7 @@ Principe de briques modulaires :
 
 // UTILS COMPONENTS
 @import "components/alert";     // alert styles TODO
-@import "components/arrow";     // arrow styles TODO
+@import "components/arrow";     // arrow styles
 @import "components/badge";     // badge styles TODO
 @import "components/table";     // data table styles TODO
 @import "components/tab";       // tab styles TODO

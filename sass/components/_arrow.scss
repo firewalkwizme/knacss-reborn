@@ -1,20 +1,36 @@
-/* ----------------------------- */
-/* ==Arrows                      */
-/* ----------------------------- */
-/* see https://knacss.com/styleguide.html#arrows */
+/*
+ * component arrow
+ */
+/*
+ * HTML template example:
+ * <i class="icon-arrow--down"></i>
+ * see doc : https: //www.knacss.com/doc.html#arrows
+ */
+
+/*
+ * arrow variables (you can change them)
+ */
+
+[class*="icon-arrow--"] {
+  --arrow-color : currentColor;
+}
+
+/*
+ * arrow styles
+ */
 
 [class*="icon-arrow--"] {
   vertical-align: middle;
+}
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    mask-size: cover;
-    background-color: $arrow-color;
-    line-height: 1;
-  }
+[class*="icon-arrow--"]::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  mask-size: cover;
+  background-color: var(--arrow-color);
+  line-height: 1;
 }
 
 .icon-arrow--down::after {
