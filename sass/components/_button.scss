@@ -1,13 +1,19 @@
-/* ----------------------------- */
-/* ==Buttons styling             */
-/* ----------------------------- */
+/*
+ * basic button component
+ */
+/*
+ * HTML template example:
+ * preferably use <button> for buttons !
+ * use .btn (for structure) and .btn-- (for variants) (see apperance mixin)
+ */
 
-/* preferably use <button> for buttons !*/
-/* use .btn-- or .button-- classes for variants */
+/*
+ * button reset
+ */
 
 %btn {
   display: inline-block;
-  padding: $spacer-small $spacer-small-plus;
+  padding: var(--spacer-small) var(--spacer-small-plus);
   cursor: pointer;
   user-select: none;
   transition: 0.25s;
@@ -16,15 +22,13 @@
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
   border: none;
-  border-radius: $border-radius;
-  background-color: $color-muted;
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray-light);
 }
 
 .btn,
-.button,
-[type="button"],
 button {
   @extend %btn;
 
@@ -33,34 +37,17 @@ button {
   }
 }
 
-.btn,
-.button {
-  @each $name, $background-color, $color, $border in $variants-list {
-    &--#{$name} {
-      @extend %btn;
-      background-color: $background-color;
-      color: $color;
-      box-shadow: $border;
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: darken( $background-color, 10% );
-      }
-    }
-  }
-}
 
 // button state variants
 .btn,
-.button {
+button {
   &--small {
-    padding: $spacer-tiny-plus $spacer-small;
+    padding: var(--spacer-tiny-plus) var(--spacer-small);
     font-size: .8em;
   }
 
   &--big {
-    padding: $spacer-small-plus $spacer-medium;
+    padding: var(--spacer-small-plus) var(--spacer-medium);
     font-size: 1.4em;
   }
 
@@ -86,5 +73,3 @@ button {
     }
   }
 }
-
-

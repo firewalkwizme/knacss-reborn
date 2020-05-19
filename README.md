@@ -16,8 +16,6 @@ Principe de briques modulaires :
 
 
 ```scss
-// WARNING : Only Core is imported by default. Just add other files if you need them.
-
 
 // CORE
 @import "abstracts/variables";           // CSS variables for project
@@ -33,28 +31,8 @@ Principe de briques modulaires :
 @import "components/radio";
 @import "components/checkbox";
 @import "components/switch";
-@import "components/button";    // TODO
-@import "components/skip-links";
+@import "components/button";
 @import "components/burger";
-
-// UTILS
-@import "utils/grillade";       // grid system with Grid Layout
-
-// UTILS COMPONENTS
-@import "components/alert";     // alert styles TODO
-@import "components/arrow";     // arrow styles
-@import "components/badge";     // badge styles TODO
-@import "components/table";     // data table styles TODO
-@import "components/tab";       // tab styles TODO
-@import "components/tag";       // tag styles TODO
-
-
-
-// TODO CORE OR NOT ?
-@import "utils/utils-layout";
-@import "utils/utils-global";
-@import "utils/utils-spacers";
-@import "utils/utils-responsive"; // TODO
 
 ```
 

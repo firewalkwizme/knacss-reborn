@@ -1,0 +1,119 @@
+// Visually-hidden mixin
+@mixin visually-hidden {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
+// Decoration for basic components: buttons, badges, alerts, etc.
+// Convention is to use BEM classes like: btn--default, title--primary, etc.
+$appearance: (
+  default: (
+    bg-color : inherit,
+    txt-color : inherit,
+    stroke : none,
+    radius: 0,
+    bg-hover: inherit
+    ),
+  primary: (
+    bg-color : var(--color-state-primary),
+    txt-color : var(--white),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-primary-dark)
+    ),
+  success: (
+    bg-color : var(--color-state-success),
+    txt-color : var(--white),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-success-dark)
+    ),
+  info: (
+    bg-color : var(--color-state-info),
+    txt-color : var(--color-text-primary),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-info-dark)
+    ),
+  warning: (
+    bg-color : var(--color-state-warning),
+    txt-color : var(--color-text-primary),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-warning-dark)
+    ),
+  danger: (
+    bg-color : var(--color-state-danger),
+    txt-color : var(--white),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-danger-dark)
+    ),
+  muted: (
+    bg-color : var(--color-state-muted),
+    txt-color : var(--white),
+    stroke : none,
+    radius: 0,
+    bg-hover: var(--color-state-muted-dark)
+    ),
+  ghost: (
+    bg-color : var(--color-state-ghost),
+    txt-color : var(--white),
+    stroke : 0 0 0 1px var(--white) inset,
+    radius: 0,
+    bg-hover: var(--color-state-ghost)
+    )
+) !default;
+
+
+// Mixin for appearance components
+@mixin appearance($elem) {
+  $q: map-get($appearance, $elem);
+  background-color: map-get($q, "bg-color");
+  color: map-get($q, "txt-color");
+  box-shadow: map-get($q, "stroke");
+  border-radius: map-get($q, "radius");
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: map-get($q, "bg-hover");
+  }
+}
+
+[class*="--default"] {
+  @include appearance('default');
+}
+
+[class*="--primary"] {
+  @include appearance('primary');
+}
+
+[class*="--success"] {
+  @include appearance('success');
+}
+
+[class*="--info"] {
+  @include appearance('info');
+}
+
+[class*="--warning"] {
+  @include appearance('warning');
+}
+
+[class*="--danger"] {
+  @include appearance('danger');
+}
+
+[class*="--muted"] {
+  @include appearance('muted');
+}
+
+[class*="--ghost"] {
+  @include appearance('ghost');
+}
