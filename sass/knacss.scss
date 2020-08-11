@@ -11,34 +11,34 @@
 @import "abstracts/variables";           // CSS variables for project
 @import "abstracts/breakpoints-sass";    // Sass variables and mixins TODO
 
-// CORE COMPONENTS
 @import "base/reset-base";
 @import "base/reset-accessibility";
 @import "base/reset-forms";
 @import "base/reset-print";
 
-@import "components/select";
-@import "components/radio";
-@import "components/checkbox";
-@import "components/switch";
-@import "components/button";
-@import "components/burger";
+// TODO CORE OR NOT ?
+@import "utils/grillade"; // grid system with Grid Layout
+@import "utils/utils-global";
+@import "utils/utils-layout";
+@import "utils/utils-responsive"; // TODO
+@import "utils/utils-spacers";
 
-// UTILS
-@import "utils/grillade";       // grid system with Grid Layout
 
-// UTILS COMPONENTS
+// COMPONENTS (add them if you need)
+/*
+
 @import "components/alert";     // alert styles TODO
 @import "components/arrow";     // arrow styles
 @import "components/badge";     // badge styles TODO
+@import "components/burger";
+@import "components/button";
+@import "components/checkbox";
+@import "components/radio";
+@import "components/select";
+@import "components/skip-links";
+@import "components/switch";
 @import "components/table";     // data table styles
 @import "components/tag";       // tag styles TODO
-@import "components/skip-links";
 
+*/
 
-
-// TODO CORE OR NOT ?
-@import "utils/utils-layout";
-@import "utils/utils-global";
-@import "utils/utils-spacers";
-@import "utils/utils-responsive"; // TODO
