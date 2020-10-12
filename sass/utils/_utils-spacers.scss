@@ -1,183 +1,136 @@
 /*
- * utils spacers
+ *  spacers utility classes
  */
 
-.man {
-  margin: 0;
-}
+// loop for each spacer
+@each $key,
+$value in $spacers {
 
-.pan {
-  padding: 0;
-}
+  .p-#{$key} {
+    padding: $value;
+  }
 
-.mas {
-  margin: var(--spacer-small);
-}
+  .pt-#{$key} {
+    padding-top: $value;
+  }
 
-.mam {
-  margin: var(--spacer-medium);
-}
+  .pr-#{$key} {
+    padding-right: $value;
+  }
 
-.mal {
-  margin: var(--spacer-large);
-}
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
 
-.pas {
-  padding: var(--spacer-small);
-}
+  .pl-#{$key} {
+    padding-left: $value;
+  }
 
-.pam {
-  padding: var(--spacer-medium);
-}
+  .px-#{$key} {
+    padding-right: $value;
+    padding-left: $value;
+  }
 
-.pal {
-  padding: var(--spacer-large);
-}
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
 
-.mtn {
-  margin-top: 0;
-}
+  .m-#{$key} {
+    margin: $value;
+  }
 
-.mts {
-  margin-top: var(--spacer-small);
-}
+  .mt-#{$key} {
+    margin-top: $value;
+  }
 
-.mtm {
-  margin-top: var(--spacer-medium);
-}
+  .mr-#{$key} {
+    margin-right: $value;
+  }
 
-.mtl {
-  margin-top: var(--spacer-large);
-}
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
 
-.mrn {
-  margin-right: 0;
-}
+  .ml-#{$key} {
+    margin-left: $value;
+  }
 
-.mrs {
-  margin-right: var(--spacer-small);
-}
+  .mx-#{$key} {
+    margin-right: $value;
+    margin-left: $value;
+  }
 
-.mrm {
-  margin-right: var(--spacer-medium);
-}
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
 
-.mrl {
-  margin-right: var(--spacer-large);
-}
+  // loop for each breakpoint
+  @each $bp,
+  $bpv in $breakpoints {
 
-.mbn {
-  margin-bottom: 0;
-}
+    @media (min-width: #{$bpv}) {
+      .#{$bp}\:p-#{$key} {
+        padding: $value;
+      }
 
-.mbs {
-  margin-bottom: var(--spacer-small);
-}
+      .#{$bp}\:pt-#{$key} {
+        padding-top: $value;
+      }
 
-.mbm {
-  margin-bottom: var(--spacer-medium);
-}
+      .#{$bp}\:pr-#{$key} {
+        padding-right: $value;
+      }
 
-.mbl {
-  margin-bottom: var(--spacer-large);
-}
+      .#{$bp}\:pb-#{$key} {
+        padding-bottom: $value;
+      }
 
-.mln {
-  margin-left: 0;
-}
+      .#{$bp}\:pl-#{$key} {
+        padding-left: $value;
+      }
 
-.mls {
-  margin-left: var(--spacer-small);
-}
+      .#{$bp}\:px-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
 
-.mlm {
-  margin-left: var(--spacer-medium);
-}
+      .#{$bp}\:py-#{$key} {
+        padding-right: $value;
+        padding-left: $value;
+      }
 
-.mll {
-  margin-left: var(--spacer-large);
-}
+      .#{$bp}\:m-#{$key} {
+        margin: $value;
+      }
 
-.mauto {
-  margin: auto;
-}
+      .#{$bp}\:mt-#{$key} {
+        margin-top: $value;
+      }
 
-.mtauto {
-  margin-top: auto;
-}
+      .#{$bp}\:mr-#{$key} {
+        margin-right: $value;
+      }
 
-.mrauto {
-  margin-right: auto;
-}
+      .#{$bp}\:mb-#{$key} {
+        margin-bottom: $value;
+      }
 
-.mbauto {
-  margin-bottom: auto;
-}
+      .#{$bp}\:ml-#{$key} {
+        margin-left: $value;
+      }
 
-.mlauto {
-  margin-left: auto;
-}
+      .#{$bp}\:mx-#{$key} {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
 
-.ptn {
-  padding-top: 0;
-}
+      .#{$bp}\:my-#{$key} {
+        margin-right: $value;
+        margin-left: $value;
+      }
+    }
+  }
 
-.pts {
-  padding-top: var(--spacer-small);
-}
-
-.ptm {
-  padding-top: var(--spacer-medium);
-}
-
-.ptl {
-  padding-top: var(--spacer-large);
-}
-
-.prn {
-  padding-right: 0;
-}
-
-.prs {
-  padding-right: var(--spacer-small);
-}
-
-.prm {
-  padding-right: var(--spacer-medium);
-}
-
-.prl {
-  padding-right: var(--spacer-large);
-}
-
-.pbn {
-  padding-bottom: 0;
-}
-
-.pbs {
-  padding-bottom: var(--spacer-small);
-}
-
-.pbm {
-  padding-bottom: var(--spacer-medium);
-}
-
-.pbl {
-  padding-bottom: var(--spacer-large);
-}
-
-.pln {
-  padding-left: 0;
-}
-
-.pls {
-  padding-left: var(--spacer-small);
-}
-
-.plm {
-  padding-left: var(--spacer-medium);
-}
-
-.pll {
-  padding-left: var(--spacer-large);
 }
