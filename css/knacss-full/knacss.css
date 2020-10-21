@@ -27,22 +27,22 @@
  * 3. Breaks words to prevent overflow in all browsers
  */
 html {
-  font-size: var(--font-size-html);
+  font-size: 62.5%;
   -webkit-tap-highlight-color: transparent;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  word-break: break-word;
+  overflow-wrap: break-word;
   /* 3 */
 }
 
 body {
-  margin: var(--margin-body);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-  background-color: var(--color-background-body);
-  color: var(--color-text-primary);
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #212529;
 }
 
 /*
@@ -60,24 +60,22 @@ h5,
 .h5-like,
 h6,
 .h6-like {
-  color: var(--color-text-heading);
+  color: #454d5d;
 }
 
 /*
  * Links
  */
 a {
-  color: var(--color-link-primary);
-  -webkit-text-decoration: var(--link-decoration);
-          text-decoration: var(--link-decoration);
+  color: #333;
+  text-decoration: underline;
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: var(--color-link-alternate);
-  -webkit-text-decoration: var(--link-decoration-hover);
-          text-decoration: var(--link-decoration-hover);
+  color: #212529;
+  text-decoration: underline;
 }
 
 /**
@@ -112,7 +110,7 @@ h6,
 dt,
 dd {
   margin-top: 0;
-  margin-bottom: var(--spacer-medium);
+  margin-bottom: 2rem;
 }
 
 p,
@@ -123,7 +121,7 @@ dl,
 blockquote,
 pre {
   margin-top: 0;
-  margin-bottom: var(--spacer-small);
+  margin-bottom: 1rem;
 }
 
 /*
@@ -148,7 +146,7 @@ li .p-like {
  */
 ul,
 ol {
-  padding-left: var(--spacer-medium);
+  padding-left: 2rem;
 }
 
 nav ul,
@@ -233,7 +231,7 @@ hr {
   overflow: visible;
   border: 0;
   border-top: 1px solid;
-  margin: var(--spacer-medium) 0;
+  margin: 2rem 0;
   clear: both;
   color: inherit;
 }
@@ -284,6 +282,9 @@ hr {
   position: absolute;
 }
 
+/* ----------------------------- */
+/* ==Reset (forms)               */
+/* ----------------------------- */
 /*
  * Remove the tapping delay on clickable elements in all browsers .
  */
@@ -331,8 +332,8 @@ input:not([type="radio"]):not([type="checkbox"])
 select,
 textarea {
   border: 0;
-  box-shadow: 0 0 0 1px var(--color-forms) inset;
-  padding: var(--spacer-tiny) var(--spacer-small);
+  box-shadow: 0 0 0 1px #333 inset;
+  padding: 0.5rem 1rem;
 }
 
 /*
@@ -391,13 +392,13 @@ fieldset {
 
 fieldset {
   margin: 0;
-  padding: var(--spacer-medium);
+  padding: 2rem;
 }
 
 legend {
   display: table;
   max-width: 100%;
-  padding: 0 var(--spacer-tiny);
+  padding: 0 0.5rem;
   border: 0;
   color: inherit;
   white-space: normal;
@@ -586,6 +587,61 @@ template {
   a[href^="#"]::after {
     content: "";
   }
+}
+
+/* ----------------------------  */
+/* ==Layout classes              */
+/* ----------------------------- */
+/* Global container */
+.layout-maxed {
+  display: grid;
+}
+
+@media (min-width: 576px) {
+  .layout-maxed {
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 576px) minmax(1rem, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-maxed {
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 768px) minmax(1rem, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout-maxed {
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1024px) minmax(1rem, 1fr);
+  }
+}
+
+@media (min-width: 1330px) {
+  .layout-maxed {
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1330px) minmax(1rem, 1fr);
+  }
+}
+
+/* Center all children */
+.layout-maxed > * {
+  grid-column: 2;
+}
+
+/* Hero box  */
+.layout-hero {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.layout-hero > * {
+  grid-column: 2;
+}
+
+/* Hero image */
+.layout-hero-img {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 100%;
 }
 
 [class*="--default"] {
@@ -1402,6 +1458,34 @@ template {
 @media (min-width: 1330px) {
   .xl\:text-right {
     text-align: right;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .sm\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:text-justify {
+    text-align: justify;
   }
 }
 

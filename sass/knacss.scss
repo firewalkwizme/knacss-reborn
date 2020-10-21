@@ -4,7 +4,7 @@
 * Licence WTFPL http://www.wtfpl.net/
 */
 
-// WARNING : Only Core is imported by default. Just add other files if you need them.
+// WARNING : Only Core and Utilities are imported by default. Just add other files if you need them.
 
 
 // CORE
@@ -14,11 +14,12 @@
 @import "base/reset-accessibility";
 @import "base/reset-forms";
 @import "base/reset-print";
+@import "base/layout"; // Global layout classes
 
 @import "abstracts/mixins-sass";    // Sass mixins 
 
-// TODO CORE OR NOT ?
-@import "utils/utils-global"; // general utility classes
+// Utility classes
+@import "utils/utils-global"; // Global utility classes
 @import "utils/utils-spacers"; // margin - padding utility classes
 @import "utils/utils-grid"; // Grid Layout utility classes
 

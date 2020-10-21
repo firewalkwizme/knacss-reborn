@@ -33,14 +33,14 @@ $spacers : (
   'auto' : auto
   ) !default;
 
-$spacer-tiny:         map-get($spacers, '0') !default;
-$spacer-tiny-plus:    map-get($spacers, '1') !default;
-$spacer-small:        map-get($spacers, '2') !default;
-$spacer-small-plus:   map-get($spacers, '3') !default;
-$spacer-medium:       map-get($spacers, '4') !default;
-$spacer-medium-plus:  map-get($spacers, '5') !default;
-$spacer-large:        map-get($spacers, '6') !default;
-$spacer-large-plus:   map-get($spacers, '7') !default;
+$spacer-none:         map-get($spacers, '0') !default;
+$spacer-tiny:         map-get($spacers, '1') !default;
+$spacer-tiny-plus:    map-get($spacers, '2') !default;
+$spacer-small:        map-get($spacers, '3') !default;
+$spacer-small-plus:   map-get($spacers, '4') !default;
+$spacer-medium:       map-get($spacers, '5') !default;
+$spacer-medium-plus:  map-get($spacers, '6') !default;
+$spacer-large:        map-get($spacers, '7') !default;
 
 // ----------------
 // Grid layout values
@@ -158,6 +158,7 @@ $utils: (
   (text-left, text-align, left),
   (text-center, text-align, center),
   (text-right, text-align, right),
+  (text-justify, text-align, justify),
   (text-wrap, overflow-wrap, break-word),
   (justify-start, justify-content, start),
   (justify-end, justify-content, end),

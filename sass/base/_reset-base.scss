@@ -22,19 +22,19 @@
  */
 
 html {
-  font-size: var(--font-size-html);
+  font-size: $font-size-html;
   -webkit-tap-highlight-color: transparent; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  word-break: break-word; /* 3 */
+  overflow-wrap: break-word; /* 3 */
 }
 
 body {
-  margin: var(--margin-body);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-  background-color: var(--color-background-body);
-  color: var(--color-text-primary);
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $color-background-body;
+  color: $color-text-primary;
 }
 
 /*
@@ -53,7 +53,7 @@ h5,
 .h5-like,
 h6,
 .h6-like {
-  color: var(--color-text-heading);
+  color: $color-text-heading;
 }
 
 /*
@@ -61,15 +61,15 @@ h6,
  */
 
 a {
-  color: var(--color-link-primary);
-  text-decoration: var(--link-decoration);
+  color: $color-link-primary;
+  text-decoration: $link-decoration;
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: var(--color-link-alternate);
-  text-decoration: var(--link-decoration-hover);
+  color: $color-link-secondary;
+  text-decoration: $link-decoration-hover;
 }
 
 /**
@@ -102,7 +102,7 @@ h6,
 dt,
 dd {
   margin-top: 0;
-  margin-bottom: var(--spacer-medium);
+  margin-bottom: $spacer-medium;
 }
 
 p,
@@ -113,7 +113,7 @@ dl,
 blockquote,
 pre {
   margin-top: 0;
-  margin-bottom: var(--spacer-small);
+  margin-bottom: $spacer-small;
 }
 
 /*
@@ -140,7 +140,7 @@ li .p-like {
 
 ul,
 ol {
-  padding-left: var(--spacer-medium);
+  padding-left: $spacer-medium;
 }
 
 nav ul,
@@ -231,7 +231,20 @@ hr {
   overflow: visible;
   border: 0;
   border-top: 1px solid;
-  margin: var(--spacer-medium) 0;
+  margin: $spacer-medium 0;
   clear: both;
   color: inherit;
+}
+
+/*
+ * table styles
+ */
+
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: top;
+  margin-bottom: $spacer-medium;
 }
