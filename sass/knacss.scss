@@ -8,8 +8,8 @@
 
 
 // CORE
-@import "abstracts/variables";           // CSS variables for project
-@import "abstracts/variables-sass";    // Sass variables and mixins TODO
+@import "abstracts/variables-sass";    // Sass variables
+@import "abstracts/mixins-sass";    // Sass mixins 
 
 @import "base/reset-base";
 @import "base/reset-accessibility";
@@ -17,14 +17,12 @@
 @import "base/reset-print";
 
 // TODO CORE OR NOT ?
-@import "utils/grillade"; // grid system with Grid Layout
-@import "utils/utils-global";
-@import "utils/utils-layout";
-@import "utils/utils-responsive"; // TODO
-@import "utils/utils-spacers";
+@import "utils/utils-global"; // general utility classes
+@import "utils/utils-spacers"; // margin - padding utility classes
+@import "utils/utils-grid"; // Grid Layout utility classes
 
 
-// COMPONENTS (add them if you need)
+// COMPONENTS (add them only if you need)
 /*
 
 @import "components/alert";     // alert styles TODO
