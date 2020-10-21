@@ -1,102 +1,127 @@
-/*
- * utils global
- */
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1330px
+);
 
-.u-bold {
-  font-weight: var(--weight-bold);
+$utils: (
+  (hidden, display, none),
+  (block, display, block),
+  (inline, display, inline),
+  (inline-block, display, inline-block),
+  (flex, display, flex),
+  (grid, display, grid),
+  (float-left, float, left),
+  (float-right, float, right),
+  (float-none, float, none),
+  (text-bold, font-weight, bold),
+  (text-italic, font-style, italic),
+  (text-uppercase, text-transform, uppercase),
+  (text-lowercase, text-transform, lowercase),
+  (text-smaller, font-size, smaller),
+  (text-bigger, font-size, bigger),
+  (text-left, text-align, left),
+  (text-center, text-align, center),
+  (text-right, text-align, right),
+  (text-wrap, overflow-wrap, break-word),
+  (justify-start, justify-content, start),
+  (justify-end, justify-content, end),
+  (justify-center, justify-content, center),
+  (justify-between, justify-content, space-between),
+  (justify-around, justify-content, space-around),
+  (justify-evenly, justify-content, space-evenly),
+  (align-start, align-content, start),
+  (align-end, align-content, end),
+  (align-center, align-content, center),
+  (align-between, align-content, space-between),
+  (align-around, align-content, space-around),
+  (align-evenly, align-content, space-evenly),
+  (place-center, place-content, center),
+  (justify-self-auto, justify-self, auto),
+  (justify-self-start, justify-self, start),
+  (justify-self-end, justify-self, end),
+  (justify-self-center, justify-self, center),
+  (justify-self-stretch, justify-self, stretch),
+  (justify-self-auto, justify-self, auto),
+  (align-self-start, align-self, start),
+  (align-self-end, align-self, end),
+  (align-self-center, align-self, center),
+  (align-self-stretch, align-self, stretch),
+  (align-top, vertical-align, top),
+  (align-bottom, vertical-align, bottom),
+  (align-middle, vertical-align, middle),
+  (item-first, order, -100),
+  (item-last, order, 100)
+) !default;
+
+@each $class, $prop, $value in $utils {
+  .#{$class} {
+    #{$prop}: #{$value};
+  }
+  
+  // loop for each breakpoint
+  @each $bp, $bpv in $breakpoints {
+      @media (min-width: #{$bpv}) {
+      .#{$bp}\:#{$class} {
+        #{$prop}: #{$value};
+      }
+    }
+  }
+  
 }
 
-.u-italic {
-  font-style: italic;
+// multi-properties utils
+.visually-hidden {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
 }
-
-.u-normal {
-  font-weight: normal;
-  font-style: normal;
+.is-unstyled {
+  list-style: none;
+  padding-left: 0;
 }
-
-.u-uppercase {
-  text-transform: uppercase;
-}
-
-.u-lowercase {
-  text-transform: lowercase;
-}
-
-.u-smaller {
-  font-size: 0.6em;
-}
-
-.u-small {
-  font-size: 0.8em;
-}
-
-.u-big {
-  font-size: 1.2em;
-}
-
-.u-bigger {
-  font-size: 1.5em;
-}
-
-.u-biggest {
-  font-size: 2em;
-}
-
-.u-txt-wrap {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-
-.u-txt-ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-/*
- * utils alignment
- */
-
-.txtleft,
-.u-txt-left {
-  text-align: left;
-}
-
-.txtright,
-.u-txt-right {
-  text-align: right;
-}
-
-.txtcenter,
-.u-txt-center {
-  text-align: center;
-}
-
-
-/*
- * state helpers
- */
-
-/* invisible for all */
-.is-hidden,
-.js-hidden,
-[hidden] {
-  display: none;
-}
-
 .is-disabled,
-.js-disabled,
-[disabled],
-.is-disabled ~ label,
-[disabled] ~ label {
+[disabled] {
   opacity: 0.6;
   cursor: not-allowed !important;
   filter: grayscale(1);
 }
+.text-normal {
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+}
 
-ul.is-unstyled,
-ul.unstyled {
-  list-style: none;
-  padding-left: 0;
+// loop for each breakpoint
+@each $bp, $bpv in $breakpoints {
+    @media (min-width: #{$bpv}) {
+    .#{$bp}\:visually-hidden {
+      position: absolute !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+    }
+    .#{$bp}\:is-unstyled {
+      list-style: none;
+      padding-left: 0;
+    }
+    .#{$bp}\:is-disabled {
+      opacity: 0.6;
+      cursor: not-allowed !important;
+      filter: grayscale(1);
+    }
+    .#{$bp}\:text-normal {
+      font-weight: normal;
+      font-style: normal;
+      text-transform: none;
+    }
+  }
 }
