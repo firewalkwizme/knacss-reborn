@@ -14,9 +14,7 @@ gulp.task('css:full', () => {
       }))
     .pipe(
       postcss([
-        // CombineMQ,
-        autoprefixer,
-        // CSSnano
+        autoprefixer, // ajoute les préfixes vendeurs
       ]))
     .pipe(gulp.dest('css/knacss-full'));
 });
@@ -29,9 +27,9 @@ gulp.task('css:mini', () => {
       }))
     .pipe(
       postcss([
-        CombineMQ,
-        autoprefixer,
-        CSSnano
+        CombineMQ, // rassemble les Media Queries (parfait pour les classes utilitaires)
+        autoprefixer, // ajoute les préfixes vendeurs
+        CSSnano // minification 
       ]))
     .pipe(gulp.dest('css/knacss-mini'));
 });
