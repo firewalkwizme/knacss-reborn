@@ -46,3 +46,58 @@
   }
 
 }
+
+// grid-items constructor
+@for $i from 1 through $grid-columns {
+  
+  .col-start-#{$i} {
+    grid-column-start: #{$i};
+  }
+  .col-end-#{$i} {
+    grid-column-end: #{$i};
+  }
+  .col-span-#{$i} {
+    grid-column: span #{$i} / span #{$i};
+  }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
+  .row-start-#{$i} {
+    grid-row-start: #{$i};
+  }
+  .row-end-#{$i} {
+    grid-row-end: #{$i};
+  }
+  .row-span-#{$i} {
+    grid-row: span #{$i} / span #{$i};
+  }
+    
+  // loop for each breakpoint
+  @each $bp, $bpv in $breakpoints {
+    
+    @media (min-width: #{$bpv}) {
+      .#{$bp}\:col-start-#{$i} {
+        grid-column-start: #{$i};
+      }
+      .#{$bp}\:col-end-#{$i} {
+        grid-column-end: #{$i};
+      }
+      .#{$bp}\:col-span-#{$i} {
+        grid-column: span #{$i} / span #{$i};
+      }
+      .#{$bp}\:col-span-full {
+        grid-column: 1 / -1;
+      }
+      .#{$bp}\:row-start-#{$i} {
+        grid-row-start: #{$i};
+      }
+      .#{$bp}\:row-end-#{$i} {
+        grid-row-end: #{$i};
+      }
+      .#{$bp}\:row-span-#{$i} {
+        grid-row: span #{$i} / span #{$i};
+      }
+    }
+  }
+
+}
