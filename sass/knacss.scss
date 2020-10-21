@@ -9,12 +9,13 @@
 
 // CORE
 @import "abstracts/variables-sass";    // Sass variables
-@import "abstracts/mixins-sass";    // Sass mixins 
 
 @import "base/reset-base";
 @import "base/reset-accessibility";
 @import "base/reset-forms";
 @import "base/reset-print";
+
+@import "abstracts/mixins-sass";    // Sass mixins 
 
 // TODO CORE OR NOT ?
 @import "utils/utils-global"; // general utility classes
