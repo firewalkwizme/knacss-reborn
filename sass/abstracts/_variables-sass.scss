@@ -43,6 +43,12 @@ $spacer-large:        map-get($spacers, '6') !default;
 $spacer-large-plus:   map-get($spacers, '7') !default;
 
 // ----------------
+// Grid layout values
+// ----------------
+
+$grid-columns: 6 !default;
+
+// ----------------
 // Fonts values
 // ----------------
 

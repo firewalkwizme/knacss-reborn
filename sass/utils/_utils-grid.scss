@@ -1,0 +1,48 @@
+/* Grid utility classes */
+
+// grid-template-columns constructor
+@for $i from 1 through $grid-columns {
+  
+  .grid-cols-#{$i} {
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+  }
+  @each $bp, $bpv in $breakpoints {
+    
+    @media (min-width: #{$bpv}) {
+      .#{$bp}\:grid-cols-#{$i} {
+        grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+      }
+    }
+  }
+
+}
+
+// gap constructor
+@each $key, $value in $spacers {
+  
+  .gap-#{$key} {
+    gap: $value;
+  }
+  .gap-x-#{$key} {
+    column-gap: $value;
+  }
+  .gap-y-#{$key} {
+    row-gap: $value;
+  }
+
+  @each $bp, $bpv in $breakpoints {
+    
+    @media (min-width: #{$bpv}) {
+      .#{$bp}\:gap-#{$key} {
+        gap: $value;
+      }
+      .#{$bp}\:gap-x-#{$key} {
+        column-gap: $value;
+      }
+      .#{$bp}\:gap-y-#{$key} {
+        row-gap: $value;
+      }
+    }
+  }
+
+}

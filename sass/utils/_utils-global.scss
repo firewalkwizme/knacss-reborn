@@ -1,3 +1,4 @@
+/* Global utility classes */
 
 @each $class, $prop, $value in $utils {
   .#{$class} {

@@ -29,20 +29,6 @@ $bp-aliases: ('small' : (max-width: #{$small - 1}),
   }
 }
 
-
-
-
-// Visually-hidden mixin
-@mixin visually-hidden {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-}
-
 // Decoration for basic components: buttons, badges, alerts, etc.
 // Convention is to use BEM classes like: btn--default, title--primary, etc.
 $appearance: (
