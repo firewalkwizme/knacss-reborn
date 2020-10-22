@@ -8,20 +8,20 @@
 // WARNING : Only Core and Utilities are imported by default. Just add other files if you need them.
 
 // CORE
-@import "abstracts/variables-sass";    // Sass variables
+@import "abstracts/variables-sass";
 
 @import "base/reset-base";
 @import "base/reset-accessibility";
 @import "base/reset-forms";
 @import "base/reset-print";
-@import "base/layout"; // Global layout classes
+@import "base/layout";
 
-@import "abstracts/mixins-sass";    // Sass mixins 
+@import "abstracts/mixins-sass"; 
 
 // UTILITY CLASSES
-@import "utils/utils-global"; // Global utility classes
-@import "utils/utils-spacers"; // margin - padding utility classes
-@import "utils/grillade"; // Grid Layout utility classes
+@import "utils/utils-global";
+@import "utils/utils-spacers";
+@import "utils/grillade";
 
 
 // COMPONENTS (add them only if you need)

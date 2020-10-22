@@ -42,7 +42,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #212529;
 }
 
@@ -61,14 +61,14 @@ h5,
 .h5-like,
 h6,
 .h6-like {
-  color: #454d5d;
+  color: #454D5D;
 }
 
 /*
  * Links
  */
 a {
-  color: #333;
+  color: #333333;
   text-decoration: underline;
 }
 
@@ -345,7 +345,7 @@ input:not([type="radio"]):not([type="checkbox"])
 select,
 textarea {
   border: 0;
-  box-shadow: 0 0 0 1px #333 inset;
+  box-shadow: 0 0 0 1px #333333 inset;
   padding: 0.5rem 1rem;
 }
 

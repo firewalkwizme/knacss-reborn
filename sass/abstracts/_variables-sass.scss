@@ -74,48 +74,50 @@ $weight-bold    : 700;
 // ----------------
 
 // Color palette (should not be used as variables)
-$white    : #fff;
-$black    : #000;
+$white    : #FFFFFF;
+$black    : #000000;
 
-$color-gray-lightest : #dee2e6;
-$color-gray-lighter  : #ced4da;
-$color-gray-light    : #acb3c2;
-$color-gray-base     : #727e96;
-$color-gray-dark     : #454d5d;
-$color-gray-darker   : #333;
-$color-gray-darkest  : #212529;
+$color-gray-100 : #F7FAFC;
+$color-gray-200 : #DEE2E6;
+$color-gray-300 : #CED4DA;
+$color-gray-400 : #ABC3C2;
+$color-gray-500 : #727E96;
+$color-gray-600 : #454D5D;
+$color-gray-700 : #333333;
+$color-gray-800 : #212529;
+$color-gray-900 : #1A202C;
 
-$color-blue-base     : #0275D8;
+$color-blue-500 : #0275D8;
 
 // Semantic colors (should be used as variables)
-$color-text-primary   : #212529;
-$color-text-secondary : #727e96;
-$color-text-heading   : #454d5d;
+$color-text-primary   : $color-gray-800;
+$color-text-secondary : $color-gray-500;
+$color-text-heading   : $color-gray-600;
 $color-text-inverted  : $white;
 
-$color-link-primary   : #333;
-$color-link-secondary : #212529;
+$color-link-primary   : $color-gray-700;
+$color-link-secondary : $color-gray-800;
 
-$color-background-primary   : #454d5d;
-$color-background-secondary : #dee2e6;
+$color-background-primary   : $color-gray-600;
+$color-background-secondary : $color-gray-200;
 $color-background-body      : $white;
 
-$color-state-primary      : #454d5d;
-$color-state-primary-dark : #333946;
+$color-state-primary      : $color-gray-600;
+$color-state-primary-dark : $color-gray-700;
 $color-state-success      : #5CB85C;
-$color-state-success-dark : #4d9c4d;
+$color-state-success-dark : #4D9C4D;
 $color-state-info         : #5BC0DE;
-$color-state-info-dark    : #4fa8c4;
+$color-state-info-dark    : #4fA8C4;
 $color-state-warning      : #F0AD4E;
-$color-state-warning-dark : #d19644;
+$color-state-warning-dark : #D19644;
 $color-state-danger       : #D9534F;
-$color-state-danger-dark  : #be4945;
-$color-state-muted        : #d2d4d8;
-$color-state-muted-dark   : #c3c5c9;
+$color-state-danger-dark  : #BE4945;
+$color-state-muted        : #D2D4d8;
+$color-state-muted-dark   : #C3C5C9;
 $color-state-ghost        : transparent;
 
-$color-forms           : #333;
-$color-forms-secondary : #333;
+$color-forms           : $color-gray-700;
+$color-forms-secondary : $color-gray-700;
 
 // Links
 $link-decoration       : underline;

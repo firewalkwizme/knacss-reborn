@@ -1,5 +1,6 @@
 # Changelog
 
+- 22 octobre 2020 : grosse remise à jour. V0.9.0
 - 12 octobre 2020 : début de refonte classes utilitaires
 - 11 août 2020 : refonte des composants principaux
 - 19 mai 2020 : fichier de composant `button.scss` et mixin Sass
