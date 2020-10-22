@@ -34,8 +34,23 @@ gulp.task('css:mini', () => {
     .pipe(gulp.dest('css/knacss-mini'));
 });
 
+gulp.task('css:grillade', () => {
+  return gulp.src('sass/utils/grillade.scss')
+    .pipe(sass(
+      {
+      outputStyle: 'compact'
+      }))
+    .pipe(
+      postcss([
+        CombineMQ, // rassemble les Media Queries (parfait pour les classes utilitaires)
+        autoprefixer, // ajoute les préfixes vendeurs
+        CSSnano // minification 
+      ]))
+    .pipe(gulp.dest('css/grillade'));
+});
+
 // Tâche BUILD : tapez "gulp" ou "gulp build"
-gulp.task('build', gulp.series('css:full', 'css:mini'));
+gulp.task('build', gulp.series('css:full', 'css:mini', 'css:grillade'));
 
 // Tâche par défaut
 gulp.task('default', gulp.series('build'));

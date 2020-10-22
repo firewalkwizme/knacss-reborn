@@ -1,6 +1,43 @@
-/* Grid utility classes */
+/* --------------------------------------- */
+/* ==Grillade : ultra light Grid Layout    */
+/* --------------------------------------- */
+// Grillade is heavily inspired by tailwindcss.com Grid utility classes
 
-// grid-template-columns constructor
+
+// use these variables only for a standalone Grillade
+// in KNACSS, you shall modify variables file instead
+$grid-columns: 6 !default;
+
+@if variable_exists(spacers) {
+  $spacers: $spacers !global;
+}
+@else {
+  $spacers : (
+  '0' : 0,
+  '1' : .5rem,
+  '2' : .75rem,
+  '3' : 1rem,
+  '4' : 1.5rem,
+  '5' : 2rem,
+  '6' : 3rem,
+  '7' : 5rem,
+  'auto' : auto
+  ) !global;
+}
+
+@if variable_exists(breakpoints) {
+  $breakpoints: $breakpoints !global;
+}
+@else {
+  $breakpoints : (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1330px
+  ) !global;
+}
+
+/* grid-template-columns classes */
 @for $i from 1 through $grid-columns {
   
   .grid-cols-#{$i} {
@@ -17,7 +54,7 @@
 
 }
 
-// gap constructor
+/* gap classes */
 @each $key, $value in $spacers {
   
   .gap-#{$key} {
@@ -47,7 +84,7 @@
 
 }
 
-// grid-items constructor
+/* grid-items classes */
 @for $i from 1 through $grid-columns {
   
   .col-start-#{$i} {

@@ -21,17 +21,17 @@
 // Utility classes
 @import "utils/utils-global"; // Global utility classes
 @import "utils/utils-spacers"; // margin - padding utility classes
-@import "utils/utils-grid"; // Grid Layout utility classes
+@import "utils/grillade"; // Grid Layout utility classes
 
 
 // COMPONENTS (add them only if you need)
-/*
+@import "components/button";
+@import "components/burger";
 
+/*
 @import "components/alert";     // alert styles TODO
 @import "components/arrow";     // arrow styles
 @import "components/badge";     // badge styles TODO
-@import "components/burger";
-@import "components/button";
 @import "components/checkbox";
 @import "components/radio";
 @import "components/select";

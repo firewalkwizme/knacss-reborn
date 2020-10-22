@@ -237,6 +237,18 @@ hr {
 }
 
 /*
+ * table styles
+ */
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: top;
+  margin-bottom: 2rem;
+}
+
+/*
  * Disable animations styles when reduced motion is enabled
  */
 @media (prefers-reduced-motion: reduce) {
@@ -328,8 +340,7 @@ textarea {
  * Basic User Interface reset
  */
 button,
-input:not([type="radio"]):not([type="checkbox"])
-select,
+input:not([type="radio"]):not([type="checkbox"]) select,
 textarea {
   border: 0;
   box-shadow: 0 0 0 1px #333 inset;
@@ -4743,7 +4754,10 @@ template {
   }
 }
 
-/* Grid utility classes */
+/* --------------------------------------- */
+/* ==Grillade : ultra light Grid Layout    */
+/* --------------------------------------- */
+/* grid-template-columns classes */
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -4912,6 +4926,7 @@ template {
   }
 }
 
+/* gap classes */
 .gap-0 {
   gap: 0;
 }
@@ -5497,6 +5512,7 @@ template {
   }
 }
 
+/* grid-items classes */
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -6242,12 +6258,152 @@ template {
 }
 
 /*
+ * basic button component
+ */
+/*
+ * HTML template example:
+ * preferably use <button> for buttons !
+ * use .button or .btn (for structure) and .btn-- (for variants) (see appearance mixin)
+ */
+/*
+ * button reset
+ */
+.btn,
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.25s;
+  transition-property: box-shadow, background-color, color, border;
+  text-decoration: none;
+  border: none;
+}
 
+.btn:focus,
+.button:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn--small,
+.button--small {
+  padding: 0.75rem 1rem;
+  font-size: .8em;
+}
+
+.btn--big,
+.button--big {
+  padding: 1.5rem 2rem;
+  font-size: 1.4em;
+}
+
+.btn--block,
+.button--block {
+  width: 100% !important;
+  display: block;
+}
+
+.btn--unstyled,
+.button--unstyled {
+  padding: 0;
+  border: none;
+  text-align: left;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn--unstyled:focus,
+.button--unstyled:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/*
+ * component nav "burger" button
+ */
+/*
+ * HTML template example:
+ * <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+ * activate it with a JS toggle-class to .is-active
+ * see doc : https: //www.knacss.com/doc.html#buttons
+ */
+/*
+ * burger variables (you can change them)
+ */
+/*
+ * burger button styles
+ */
+.burger-button {
+  padding: 0;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.burger-button > * {
+  display: inline-flex;
+  vertical-align: top;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 2.6rem;
+  width: 2.6rem;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#333, #333);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 100% 5px;
+  transition: .25s;
+  transition-property: transform, background;
+  will-change: transform, background;
+}
+
+.burger-button > *::before,
+.burger-button > *::after {
+  content: "";
+  height: 5px;
+  background: #333;
+  transition: .25s;
+  transition-property: transform, top;
+  will-change: transform, top;
+}
+
+.burger-button:hover > * {
+  background-color: transparent;
+}
+
+.burger-button:focus {
+  outline: 0;
+}
+
+.burger-button.is-active > * {
+  background-image: none;
+  justify-content: center;
+}
+
+.burger-button.is-active > *::before {
+  transform: translateY(50%) rotate3d(0, 0, 1, 45deg);
+}
+
+.burger-button.is-active > *::after {
+  transform: translateY(-50%) rotate3d(0, 0, 1, -45deg);
+}
+
+/*
 @import "components/alert";     // alert styles TODO
 @import "components/arrow";     // arrow styles
 @import "components/badge";     // badge styles TODO
-@import "components/burger";
-@import "components/button";
 @import "components/checkbox";
 @import "components/radio";
 @import "components/select";

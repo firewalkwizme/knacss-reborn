@@ -12,14 +12,12 @@
  * burger variables (you can change them)
  */
 
-.burger-button {
-  --burger-color : #333;
-  --burger-background : transparent;
-  --burger-hover-background : transparent;
-  --burger-size : 2.6rem;
-  --burger-weight : 5px; // size of stripes
-  --burger-padding : 0;
-}
+$burger-color : #333;
+$burger-background : transparent;
+$burger-hover-background : transparent;
+$burger-size : 2.6rem;
+$burger-weight : 5px; // size of stripes
+$burger-padding : 0;
 
 /*
  * burger button styles
@@ -40,15 +38,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  height: var(--burger-size);
-  width: var(--burger-size);
-  padding: var(--burger-padding);
-  background-color: var(--burger-background);
-  background-image: linear-gradient(var(--burger-color), var(--burger-color));
+  height: $burger-size;
+  width: $burger-size;
+  padding: $burger-padding;
+  background-color: $burger-background;
+  background-image: linear-gradient($burger-color, $burger-color);
   background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-size: 100% var(--burger-weight);
+  background-size: 100% $burger-weight;
   transition: .25s;
   transition-property: transform, background;
   will-change: transform, background;
@@ -57,15 +55,15 @@
 .burger-button > *::before,
 .burger-button > *::after {
   content: "";
-  height: var(--burger-weight);
-  background: var(--burger-color);
+  height: $burger-weight;
+  background: $burger-color;
   transition: .25s;
   transition-property: transform, top;
   will-change: transform, top;
 }
 
 .burger-button:hover > * {
-  background-color: var(--burger-hover-background);
+  background-color: $burger-hover-background;
 }
 
 .burger-button:focus {

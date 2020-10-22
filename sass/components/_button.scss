@@ -4,7 +4,7 @@
 /*
  * HTML template example:
  * preferably use <button> for buttons !
- * use .btn (for structure) and .btn-- (for variants) (see apperance mixin)
+ * use .button or .btn (for structure) and .btn-- (for variants) (see appearance mixin)
  */
 
 /*
@@ -12,20 +12,20 @@
  */
 
 %btn {
-  display: inline-block;
-  padding: var(--spacer-small) var(--spacer-small-plus);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacer-small $spacer-small-plus;
   cursor: pointer;
   user-select: none;
   transition: 0.25s;
   transition-property: box-shadow, background-color, color, border;
-  text-align: center;
-  vertical-align: middle;
   text-decoration: none;
   border: none;
 }
 
 .btn,
-button {
+.button {
   @extend %btn;
 
   &:focus {
@@ -33,17 +33,16 @@ button {
   }
 }
 
-
 // button state variants
 .btn,
-button {
+.button {
   &--small {
-    padding: var(--spacer-tiny-plus) var(--spacer-small);
+    padding: $spacer-tiny-plus $spacer-small;
     font-size: .8em;
   }
 
   &--big {
-    padding: var(--spacer-small-plus) var(--spacer-medium);
+    padding: $spacer-small-plus $spacer-medium;
     font-size: 1.4em;
   }
 
