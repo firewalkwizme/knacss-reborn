@@ -23,13 +23,13 @@ $extra-large: map-get($breakpoints, xl) !default;
 
 $spacers : (
   '0' : 0,
-  '1' : .5rem,
-  '2' : .75rem,
-  '3' : 1rem,
-  '4' : 1.5rem,
-  '5' : 2rem,
-  '6' : 3rem,
-  '7' : 5rem,
+  '1' : .5rem,  // tiny
+  '2' : .75rem, // tiny-plus
+  '3' : 1rem,   // small
+  '4' : 1.5rem, // small-plus
+  '5' : 2rem,   // medium
+  '6' : 3rem,   // medium-plus
+  '7' : 5rem,   // large
   'auto' : auto
   ) !default;
 
@@ -161,27 +161,33 @@ $utils: (
   (text-right, text-align, right),
   (text-justify, text-align, justify),
   (text-wrap, overflow-wrap, break-word),
-  (justify-start, justify-content, start),
-  (justify-end, justify-content, end),
+  (justify-start, justify-content, flex-start),
+  (justify-end, justify-content, flex-end),
   (justify-center, justify-content, center),
   (justify-between, justify-content, space-between),
   (justify-around, justify-content, space-around),
   (justify-evenly, justify-content, space-evenly),
+  (justify-items-start, justify-items, start),
+  (justify-items-end, justify-items, end),
+  (justify-items-center, justify-items, center),
   (align-start, align-content, start),
   (align-end, align-content, end),
   (align-center, align-content, center),
   (align-between, align-content, space-between),
   (align-around, align-content, space-around),
   (align-evenly, align-content, space-evenly),
+  (align-items-start, align-items, flex-start),
+  (align-items-end, align-items, flex-end),
+  (align-items-center, align-items, center),
   (place-center, place-content, center),
   (justify-self-auto, justify-self, auto),
   (justify-self-start, justify-self, start),
   (justify-self-end, justify-self, end),
   (justify-self-center, justify-self, center),
   (justify-self-stretch, justify-self, stretch),
-  (justify-self-auto, justify-self, auto),
-  (align-self-start, align-self, start),
-  (align-self-end, align-self, end),
+  (align-self-auto, align-self, auto),
+  (align-self-start, align-self, flex-start),
+  (align-self-end, align-self, flex-end),
   (align-self-center, align-self, center),
   (align-self-stretch, align-self, stretch),
   (align-top, vertical-align, top),

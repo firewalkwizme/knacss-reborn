@@ -1415,58 +1415,58 @@ template {
 }
 
 .justify-start {
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 @media (min-width: 576px) {
   .sm\:justify-start {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 768px) {
   .md\:justify-start {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:justify-start {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 1330px) {
   .xl\:justify-start {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
 .justify-end {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 @media (min-width: 576px) {
   .sm\:justify-end {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 768px) {
   .md\:justify-end {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:justify-end {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1330px) {
   .xl\:justify-end {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
@@ -1579,6 +1579,90 @@ template {
 @media (min-width: 1330px) {
   .xl\:justify-evenly {
     justify-content: space-evenly;
+  }
+}
+
+.justify-items-start {
+  justify-items: start;
+}
+
+@media (min-width: 576px) {
+  .sm\:justify-items-start {
+    justify-items: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:justify-items-start {
+    justify-items: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-items-start {
+    justify-items: start;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:justify-items-start {
+    justify-items: start;
+  }
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+@media (min-width: 576px) {
+  .sm\:justify-items-end {
+    justify-items: end;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:justify-items-end {
+    justify-items: end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-items-end {
+    justify-items: end;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:justify-items-end {
+    justify-items: end;
+  }
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+@media (min-width: 576px) {
+  .sm\:justify-items-center {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:justify-items-center {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-items-center {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:justify-items-center {
+    justify-items: center;
   }
 }
 
@@ -1750,6 +1834,90 @@ template {
   }
 }
 
+.align-items-start {
+  align-items: flex-start;
+}
+
+@media (min-width: 576px) {
+  .sm\:align-items-start {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:align-items-start {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:align-items-start {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:align-items-start {
+    align-items: flex-start;
+  }
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+@media (min-width: 576px) {
+  .sm\:align-items-end {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:align-items-end {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:align-items-end {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:align-items-end {
+    align-items: flex-end;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .sm\:align-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:align-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:align-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:align-items-center {
+    align-items: center;
+  }
+}
+
 .place-center {
   place-content: center;
 }
@@ -1918,87 +2086,87 @@ template {
   }
 }
 
-.justify-self-auto {
-  justify-self: auto;
+.align-self-auto {
+  align-self: auto;
 }
 
 @media (min-width: 576px) {
-  .sm\:justify-self-auto {
-    justify-self: auto;
+  .sm\:align-self-auto {
+    align-self: auto;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:justify-self-auto {
-    justify-self: auto;
+  .md\:align-self-auto {
+    align-self: auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:justify-self-auto {
-    justify-self: auto;
+  .lg\:align-self-auto {
+    align-self: auto;
   }
 }
 
 @media (min-width: 1330px) {
-  .xl\:justify-self-auto {
-    justify-self: auto;
+  .xl\:align-self-auto {
+    align-self: auto;
   }
 }
 
 .align-self-start {
-  align-self: start;
+  align-self: flex-start;
 }
 
 @media (min-width: 576px) {
   .sm\:align-self-start {
-    align-self: start;
+    align-self: flex-start;
   }
 }
 
 @media (min-width: 768px) {
   .md\:align-self-start {
-    align-self: start;
+    align-self: flex-start;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:align-self-start {
-    align-self: start;
+    align-self: flex-start;
   }
 }
 
 @media (min-width: 1330px) {
   .xl\:align-self-start {
-    align-self: start;
+    align-self: flex-start;
   }
 }
 
 .align-self-end {
-  align-self: end;
+  align-self: flex-end;
 }
 
 @media (min-width: 576px) {
   .sm\:align-self-end {
-    align-self: end;
+    align-self: flex-end;
   }
 }
 
 @media (min-width: 768px) {
   .md\:align-self-end {
-    align-self: end;
+    align-self: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:align-self-end {
-    align-self: end;
+    align-self: flex-end;
   }
 }
 
 @media (min-width: 1330px) {
   .xl\:align-self-end {
-    align-self: end;
+    align-self: flex-end;
   }
 }
 
@@ -2217,8 +2385,7 @@ template {
 [disabled] {
   opacity: 0.6;
   cursor: not-allowed !important;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .text-normal {
@@ -2244,8 +2411,7 @@ template {
   .sm\:is-disabled {
     opacity: 0.6;
     cursor: not-allowed !important;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   .sm\:text-normal {
     font-weight: normal;
@@ -2271,8 +2437,7 @@ template {
   .md\:is-disabled {
     opacity: 0.6;
     cursor: not-allowed !important;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   .md\:text-normal {
     font-weight: normal;
@@ -2298,8 +2463,7 @@ template {
   .lg\:is-disabled {
     opacity: 0.6;
     cursor: not-allowed !important;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   .lg\:text-normal {
     font-weight: normal;
@@ -2325,8 +2489,7 @@ template {
   .xl\:is-disabled {
     opacity: 0.6;
     cursor: not-allowed !important;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   .xl\:text-normal {
     font-weight: normal;
@@ -4846,8 +5009,7 @@ template {
 }
 
 .gap-x-0 {
-  -webkit-column-gap: 0;
-          column-gap: 0;
+  column-gap: 0;
 }
 
 .gap-y-0 {
@@ -4859,8 +5021,7 @@ template {
     gap: 0;
   }
   .sm\:gap-x-0 {
-    -webkit-column-gap: 0;
-            column-gap: 0;
+    column-gap: 0;
   }
   .sm\:gap-y-0 {
     row-gap: 0;
@@ -4872,8 +5033,7 @@ template {
     gap: 0;
   }
   .md\:gap-x-0 {
-    -webkit-column-gap: 0;
-            column-gap: 0;
+    column-gap: 0;
   }
   .md\:gap-y-0 {
     row-gap: 0;
@@ -4885,8 +5045,7 @@ template {
     gap: 0;
   }
   .lg\:gap-x-0 {
-    -webkit-column-gap: 0;
-            column-gap: 0;
+    column-gap: 0;
   }
   .lg\:gap-y-0 {
     row-gap: 0;
@@ -4898,8 +5057,7 @@ template {
     gap: 0;
   }
   .xl\:gap-x-0 {
-    -webkit-column-gap: 0;
-            column-gap: 0;
+    column-gap: 0;
   }
   .xl\:gap-y-0 {
     row-gap: 0;
@@ -4911,8 +5069,7 @@ template {
 }
 
 .gap-x-1 {
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 
 .gap-y-1 {
@@ -4924,8 +5081,7 @@ template {
     gap: 0.5rem;
   }
   .sm\:gap-x-1 {
-    -webkit-column-gap: 0.5rem;
-            column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .sm\:gap-y-1 {
     row-gap: 0.5rem;
@@ -4937,8 +5093,7 @@ template {
     gap: 0.5rem;
   }
   .md\:gap-x-1 {
-    -webkit-column-gap: 0.5rem;
-            column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .md\:gap-y-1 {
     row-gap: 0.5rem;
@@ -4950,8 +5105,7 @@ template {
     gap: 0.5rem;
   }
   .lg\:gap-x-1 {
-    -webkit-column-gap: 0.5rem;
-            column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .lg\:gap-y-1 {
     row-gap: 0.5rem;
@@ -4963,8 +5117,7 @@ template {
     gap: 0.5rem;
   }
   .xl\:gap-x-1 {
-    -webkit-column-gap: 0.5rem;
-            column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .xl\:gap-y-1 {
     row-gap: 0.5rem;
@@ -4976,8 +5129,7 @@ template {
 }
 
 .gap-x-2 {
-  -webkit-column-gap: 0.75rem;
-          column-gap: 0.75rem;
+  column-gap: 0.75rem;
 }
 
 .gap-y-2 {
@@ -4989,8 +5141,7 @@ template {
     gap: 0.75rem;
   }
   .sm\:gap-x-2 {
-    -webkit-column-gap: 0.75rem;
-            column-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
   .sm\:gap-y-2 {
     row-gap: 0.75rem;
@@ -5002,8 +5153,7 @@ template {
     gap: 0.75rem;
   }
   .md\:gap-x-2 {
-    -webkit-column-gap: 0.75rem;
-            column-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
   .md\:gap-y-2 {
     row-gap: 0.75rem;
@@ -5015,8 +5165,7 @@ template {
     gap: 0.75rem;
   }
   .lg\:gap-x-2 {
-    -webkit-column-gap: 0.75rem;
-            column-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
   .lg\:gap-y-2 {
     row-gap: 0.75rem;
@@ -5028,8 +5177,7 @@ template {
     gap: 0.75rem;
   }
   .xl\:gap-x-2 {
-    -webkit-column-gap: 0.75rem;
-            column-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
   .xl\:gap-y-2 {
     row-gap: 0.75rem;
@@ -5041,8 +5189,7 @@ template {
 }
 
 .gap-x-3 {
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .gap-y-3 {
@@ -5054,8 +5201,7 @@ template {
     gap: 1rem;
   }
   .sm\:gap-x-3 {
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    column-gap: 1rem;
   }
   .sm\:gap-y-3 {
     row-gap: 1rem;
@@ -5067,8 +5213,7 @@ template {
     gap: 1rem;
   }
   .md\:gap-x-3 {
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    column-gap: 1rem;
   }
   .md\:gap-y-3 {
     row-gap: 1rem;
@@ -5080,8 +5225,7 @@ template {
     gap: 1rem;
   }
   .lg\:gap-x-3 {
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    column-gap: 1rem;
   }
   .lg\:gap-y-3 {
     row-gap: 1rem;
@@ -5093,8 +5237,7 @@ template {
     gap: 1rem;
   }
   .xl\:gap-x-3 {
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    column-gap: 1rem;
   }
   .xl\:gap-y-3 {
     row-gap: 1rem;
@@ -5106,8 +5249,7 @@ template {
 }
 
 .gap-x-4 {
-  -webkit-column-gap: 1.5rem;
-          column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 
 .gap-y-4 {
@@ -5119,8 +5261,7 @@ template {
     gap: 1.5rem;
   }
   .sm\:gap-x-4 {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   .sm\:gap-y-4 {
     row-gap: 1.5rem;
@@ -5132,8 +5273,7 @@ template {
     gap: 1.5rem;
   }
   .md\:gap-x-4 {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   .md\:gap-y-4 {
     row-gap: 1.5rem;
@@ -5145,8 +5285,7 @@ template {
     gap: 1.5rem;
   }
   .lg\:gap-x-4 {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   .lg\:gap-y-4 {
     row-gap: 1.5rem;
@@ -5158,8 +5297,7 @@ template {
     gap: 1.5rem;
   }
   .xl\:gap-x-4 {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   .xl\:gap-y-4 {
     row-gap: 1.5rem;
@@ -5171,8 +5309,7 @@ template {
 }
 
 .gap-x-5 {
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .gap-y-5 {
@@ -5184,8 +5321,7 @@ template {
     gap: 2rem;
   }
   .sm\:gap-x-5 {
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
   }
   .sm\:gap-y-5 {
     row-gap: 2rem;
@@ -5197,8 +5333,7 @@ template {
     gap: 2rem;
   }
   .md\:gap-x-5 {
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
   }
   .md\:gap-y-5 {
     row-gap: 2rem;
@@ -5210,8 +5345,7 @@ template {
     gap: 2rem;
   }
   .lg\:gap-x-5 {
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
   }
   .lg\:gap-y-5 {
     row-gap: 2rem;
@@ -5223,8 +5357,7 @@ template {
     gap: 2rem;
   }
   .xl\:gap-x-5 {
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
   }
   .xl\:gap-y-5 {
     row-gap: 2rem;
@@ -5236,8 +5369,7 @@ template {
 }
 
 .gap-x-6 {
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .gap-y-6 {
@@ -5249,8 +5381,7 @@ template {
     gap: 3rem;
   }
   .sm\:gap-x-6 {
-    -webkit-column-gap: 3rem;
-            column-gap: 3rem;
+    column-gap: 3rem;
   }
   .sm\:gap-y-6 {
     row-gap: 3rem;
@@ -5262,8 +5393,7 @@ template {
     gap: 3rem;
   }
   .md\:gap-x-6 {
-    -webkit-column-gap: 3rem;
-            column-gap: 3rem;
+    column-gap: 3rem;
   }
   .md\:gap-y-6 {
     row-gap: 3rem;
@@ -5275,8 +5405,7 @@ template {
     gap: 3rem;
   }
   .lg\:gap-x-6 {
-    -webkit-column-gap: 3rem;
-            column-gap: 3rem;
+    column-gap: 3rem;
   }
   .lg\:gap-y-6 {
     row-gap: 3rem;
@@ -5288,8 +5417,7 @@ template {
     gap: 3rem;
   }
   .xl\:gap-x-6 {
-    -webkit-column-gap: 3rem;
-            column-gap: 3rem;
+    column-gap: 3rem;
   }
   .xl\:gap-y-6 {
     row-gap: 3rem;
@@ -5301,8 +5429,7 @@ template {
 }
 
 .gap-x-7 {
-  -webkit-column-gap: 5rem;
-          column-gap: 5rem;
+  column-gap: 5rem;
 }
 
 .gap-y-7 {
@@ -5314,8 +5441,7 @@ template {
     gap: 5rem;
   }
   .sm\:gap-x-7 {
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    column-gap: 5rem;
   }
   .sm\:gap-y-7 {
     row-gap: 5rem;
@@ -5327,8 +5453,7 @@ template {
     gap: 5rem;
   }
   .md\:gap-x-7 {
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    column-gap: 5rem;
   }
   .md\:gap-y-7 {
     row-gap: 5rem;
@@ -5340,8 +5465,7 @@ template {
     gap: 5rem;
   }
   .lg\:gap-x-7 {
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    column-gap: 5rem;
   }
   .lg\:gap-y-7 {
     row-gap: 5rem;
@@ -5353,8 +5477,7 @@ template {
     gap: 5rem;
   }
   .xl\:gap-x-7 {
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    column-gap: 5rem;
   }
   .xl\:gap-y-7 {
     row-gap: 5rem;
@@ -5366,8 +5489,7 @@ template {
 }
 
 .gap-x-auto {
-  -webkit-column-gap: auto;
-          column-gap: auto;
+  column-gap: auto;
 }
 
 .gap-y-auto {
@@ -5379,8 +5501,7 @@ template {
     gap: auto;
   }
   .sm\:gap-x-auto {
-    -webkit-column-gap: auto;
-            column-gap: auto;
+    column-gap: auto;
   }
   .sm\:gap-y-auto {
     row-gap: auto;
@@ -5392,8 +5513,7 @@ template {
     gap: auto;
   }
   .md\:gap-x-auto {
-    -webkit-column-gap: auto;
-            column-gap: auto;
+    column-gap: auto;
   }
   .md\:gap-y-auto {
     row-gap: auto;
@@ -5405,8 +5525,7 @@ template {
     gap: auto;
   }
   .lg\:gap-x-auto {
-    -webkit-column-gap: auto;
-            column-gap: auto;
+    column-gap: auto;
   }
   .lg\:gap-y-auto {
     row-gap: auto;
@@ -5418,8 +5537,7 @@ template {
     gap: auto;
   }
   .xl\:gap-x-auto {
-    -webkit-column-gap: auto;
-            column-gap: auto;
+    column-gap: auto;
   }
   .xl\:gap-y-auto {
     row-gap: auto;
