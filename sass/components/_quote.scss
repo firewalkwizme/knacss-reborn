@@ -12,9 +12,7 @@
  * quotes variables (you can change them)
  */
 
-blockquote {
-  --blockquote-color: #454d5d;
-}
+$blockquote-color: #454d5d;
 
 /*
  * quotes styles
@@ -35,7 +33,7 @@ blockquote::before {
   font-size: 5em;
   height: .4em;
   line-height: .9;
-  color: var(--blockquote-color);
+  color: $blockquote-color;
 }
 
 blockquote > footer {

@@ -1,6 +1,7 @@
 /*!
-* KNACSS Reborn: just keep it simple!
+* KNACSS Reborn: Just keep it simple!
 * @author: Alsacreations
+* v0.9.0 2020/10
 * Licence WTFPL http://www.wtfpl.net/
 */
 /* ----------------------------- */
@@ -340,7 +341,8 @@ textarea {
  * Basic User Interface reset
  */
 button,
-input:not([type="radio"]):not([type="checkbox"]) select,
+input:not([type="radio"]):not([type="checkbox"])
+select,
 textarea {
   border: 0;
   box-shadow: 0 0 0 1px #333 inset;
@@ -653,94 +655,6 @@ template {
   grid-column: 1 / -1;
   justify-self: center;
   max-width: 100%;
-}
-
-[class*="--default"] {
-  background-color: inherit;
-  color: inherit;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--default"]:hover, [class*="--default"]:focus, [class*="--default"]:active {
-  background-color: inherit;
-}
-
-[class*="--primary"] {
-  background-color: var(--color-state-primary);
-  color: var(--white);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--primary"]:hover, [class*="--primary"]:focus, [class*="--primary"]:active {
-  background-color: var(--color-state-primary-dark);
-}
-
-[class*="--success"] {
-  background-color: var(--color-state-success);
-  color: var(--white);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--success"]:hover, [class*="--success"]:focus, [class*="--success"]:active {
-  background-color: var(--color-state-success-dark);
-}
-
-[class*="--info"] {
-  background-color: var(--color-state-info);
-  color: var(--color-text-primary);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--info"]:hover, [class*="--info"]:focus, [class*="--info"]:active {
-  background-color: var(--color-state-info-dark);
-}
-
-[class*="--warning"] {
-  background-color: var(--color-state-warning);
-  color: var(--color-text-primary);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--warning"]:hover, [class*="--warning"]:focus, [class*="--warning"]:active {
-  background-color: var(--color-state-warning-dark);
-}
-
-[class*="--danger"] {
-  background-color: var(--color-state-danger);
-  color: var(--white);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--danger"]:hover, [class*="--danger"]:focus, [class*="--danger"]:active {
-  background-color: var(--color-state-danger-dark);
-}
-
-[class*="--muted"] {
-  background-color: var(--color-state-muted);
-  color: var(--white);
-  box-shadow: none;
-  border-radius: 0;
-}
-
-[class*="--muted"]:hover, [class*="--muted"]:focus, [class*="--muted"]:active {
-  background-color: var(--color-state-muted-dark);
-}
-
-[class*="--ghost"] {
-  background-color: var(--color-state-ghost);
-  color: var(--white);
-  box-shadow: 0 0 0 1px var(--white) inset;
-  border-radius: 0;
-}
-
-[class*="--ghost"]:hover, [class*="--ghost"]:focus, [class*="--ghost"]:active {
-  background-color: var(--color-state-ghost);
 }
 
 /* Global utility classes */
@@ -6256,160 +6170,3 @@ template {
     grid-row: span 6 / span 6;
   }
 }
-
-/*
- * basic button component
- */
-/*
- * HTML template example:
- * preferably use <button> for buttons !
- * use .button or .btn (for structure) and .btn-- (for variants) (see appearance mixin)
- */
-/*
- * button reset
- */
-.btn,
-.button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  transition: 0.25s;
-  transition-property: box-shadow, background-color, color, border;
-  text-decoration: none;
-  border: none;
-}
-
-.btn:focus,
-.button:focus {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.btn--small,
-.button--small {
-  padding: 0.75rem 1rem;
-  font-size: .8em;
-}
-
-.btn--big,
-.button--big {
-  padding: 1.5rem 2rem;
-  font-size: 1.4em;
-}
-
-.btn--block,
-.button--block {
-  width: 100% !important;
-  display: block;
-}
-
-.btn--unstyled,
-.button--unstyled {
-  padding: 0;
-  border: none;
-  text-align: left;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.btn--unstyled:focus,
-.button--unstyled:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-/*
- * component nav "burger" button
- */
-/*
- * HTML template example:
- * <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
- * activate it with a JS toggle-class to .is-active
- * see doc : https: //www.knacss.com/doc.html#buttons
- */
-/*
- * burger variables (you can change them)
- */
-/*
- * burger button styles
- */
-.burger-button {
-  padding: 0;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.burger-button > * {
-  display: inline-flex;
-  vertical-align: top;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 2.6rem;
-  width: 2.6rem;
-  padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#333, #333);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-size: 100% 5px;
-  transition: .25s;
-  transition-property: transform, background;
-  will-change: transform, background;
-}
-
-.burger-button > *::before,
-.burger-button > *::after {
-  content: "";
-  height: 5px;
-  background: #333;
-  transition: .25s;
-  transition-property: transform, top;
-  will-change: transform, top;
-}
-
-.burger-button:hover > * {
-  background-color: transparent;
-}
-
-.burger-button:focus {
-  outline: 0;
-}
-
-.burger-button.is-active > * {
-  background-image: none;
-  justify-content: center;
-}
-
-.burger-button.is-active > *::before {
-  transform: translateY(50%) rotate3d(0, 0, 1, 45deg);
-}
-
-.burger-button.is-active > *::after {
-  transform: translateY(-50%) rotate3d(0, 0, 1, -45deg);
-}
-
-/*
-@import "components/alert";     // alert styles TODO
-@import "components/arrow";     // arrow styles
-@import "components/badge";     // badge styles TODO
-@import "components/checkbox";
-@import "components/radio";
-@import "components/select";
-@import "components/skip-links";
-@import "components/switch";
-@import "components/table";     // data table styles
-@import "components/tag";       // tag styles TODO
-
-*/
