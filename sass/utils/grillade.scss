@@ -37,6 +37,18 @@ $grid-columns: 6 !default;
   ) !global;
 }
 
+.grid {
+  display: grid;
+}
+// grid class for each breakpoint
+@each $bp, $bpv in $breakpoints {
+    @media (min-width: #{$bpv}) {
+    .#{$bp}\:grid {
+      display: grid;
+    }
+  }
+}
+
 /* grid-template-columns classes */
 @for $i from 1 through $grid-columns {
   

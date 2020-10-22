@@ -129,7 +129,7 @@ $radius-large  : 2rem;
 $radius-circle : 50%;
 
 // ----------------
-// Utils properties list
+// Utils properties list (note that display: grid is in Grillade)
 // ----------------
 $utils: (
   (hidden, display, none),
@@ -137,7 +137,6 @@ $utils: (
   (inline, display, inline),
   (inline-block, display, inline-block),
   (flex, display, flex),
-  (grid, display, grid),
   (flex-row, flex-direction, row),
   (flex-col, flex-direction, column),
   (flex-wrap, flex-wrap, wrap),

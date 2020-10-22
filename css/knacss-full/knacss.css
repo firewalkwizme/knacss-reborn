@@ -884,34 +884,6 @@ template {
   }
 }
 
-.grid {
-  display: grid;
-}
-
-@media (min-width: 576px) {
-  .sm\:grid {
-    display: grid;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:grid {
-    display: grid;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid {
-    display: grid;
-  }
-}
-
-@media (min-width: 1330px) {
-  .xl\:grid {
-    display: grid;
-  }
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -4757,6 +4729,34 @@ template {
 /* --------------------------------------- */
 /* ==Grillade : ultra light Grid Layout    */
 /* --------------------------------------- */
+.grid {
+  display: grid;
+}
+
+@media (min-width: 576px) {
+  .sm\:grid {
+    display: grid;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
+}
+
+@media (min-width: 1330px) {
+  .xl\:grid {
+    display: grid;
+  }
+}
+
 /* grid-template-columns classes */
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
