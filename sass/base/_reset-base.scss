@@ -90,17 +90,7 @@ abbr[title] {
 h1,
 .h1-like,
 h2,
-.h2-like,
-h3,
-.h3-like,
-h4,
-.h4-like,
-h5,
-.h5-like,
-h6,
-.h6-like,
-dt,
-dd {
+.h2-like {
   margin-top: 0;
   margin-bottom: $spacer-medium;
 }
@@ -111,7 +101,17 @@ ol,
 ul,
 dl,
 blockquote,
-pre {
+pre,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like,
+dt,
+dd {
   margin-top: 0;
   margin-bottom: $spacer-small;
 }
