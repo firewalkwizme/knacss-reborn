@@ -22,7 +22,7 @@ $radio-border-radius: 50%;
  */
 
 .radio {
-  border-radius: $checkbox-border-radius;
+  border-radius: $radio-border-radius;
 }
 
 .radio {
@@ -57,5 +57,5 @@ $radio-border-radius: 50%;
   background-size: 70% 70%;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $radio-background;
+  background-color: $color-forms;
 }
