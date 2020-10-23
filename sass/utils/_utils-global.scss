@@ -1,4 +1,6 @@
-/* Global utility classes */
+/* 
+ * Global utility classes 
+ */
 
 @each $class, $prop, $value in $utils {
   .#{$class} {
@@ -17,15 +19,6 @@
 }
 
 // multi-properties utils
-.visually-hidden {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-}
 .is-unstyled {
   list-style: none;
   padding-left: 0;
