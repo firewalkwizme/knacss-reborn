@@ -19,7 +19,6 @@ textarea,
   touch-action: manipulation;
 }
 
-
 /*
  * 1. Change the inconsistent appearance in all browsers.
  * 2. Add typography inheritance in all browsers.
@@ -44,12 +43,9 @@ textarea {
  */
 
 button,
-input:not([type="radio"]):not([type="checkbox"])
-select,
+input:not([type="radio"]):not([type="checkbox"]) select,
 textarea {
   border: 0;
-  box-shadow: 0 0 0 1px $color-forms inset;
-  padding: $spacer-tiny $spacer-small;
 }
 
 /*
