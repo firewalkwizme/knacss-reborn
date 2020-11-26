@@ -1,54 +1,47 @@
-# KNACSS
+# KNACSS Reborn
 
 Reborn!
 
-![knacki](https://github.com/raphaelgoetter/knacss-reborn/blob/master/knacki.png)
+<http://www.knacss.com>
 
+KNACSS, c'est une sorte de feuille de style CSS "reset" sur-vitaminée qui permet de commencer un projet à partir de zéro tout en tenant compte de bonnes pratiques générales (accessibilité, performance, responsive webdesign, grille de mise en forme).
 
-# Todo List
+Conçu par l'agence web [Alsacreations.fr](http://alsacreations.fr) et pensé pour être couplé avec des préprocesseurs tel que Sass, le micro-framework KNACSS est employé quotidiennement sur toute sorte de projet web quel que soit son type ou son envergure.
 
-## knacss.scss
+## Reborn !
+
+Né en 2012 et après près de 10 années de bons et loyaux services, le projet initial "KNACSS" d'Alsacréations laisse place à une toute nouvelle version, totalement remaniée : **KNACSS Reborn**.
+
+La [Documentation de KNACSS Reborn](https://www.knacss.com/doc.html) détaille les changements opérés.
+
+## Modulaire
 
 Principe de briques modulaires :
 
-- KNACSS de base est constitué uniquement des fichiers "Core".
+- KNACSS Reborn est constitué uniquement des fichiers "Core".
 - Les fichiers "Utils" seront des briques optionnelles (= les `@import` seront commentés par défaut).
 
-
 ```scss
-
 // CORE
-@import "abstracts/variables";           // CSS variables for project
-@import "abstracts/breakpoints-sass";    // Sass variables and mixins TODO
+@import "abstracts/variables-sass";
 
-// CORE COMPONENTS
 @import "base/reset-base";
 @import "base/reset-accessibility";
 @import "base/reset-forms";
 @import "base/reset-print";
+@import "base/layout";
 
-@import "components/select";
-@import "components/radio";
-@import "components/checkbox";
-@import "components/switch";
-@import "components/button";
-@import "components/burger";
+@import "abstracts/mixins-sass";
 
+// UTILITY CLASSES
+// @import "utils/utils-global";
+// @import "utils/utils-spacers";
+// @import "utils/grillade";
+
+// COMPONENTS (add them only if you need)
+// @import "components/button";
+// @import "components/burger";
+// @import "components/checkbox";
+// @import "components/radio";
+// @import "components/quote";
 ```
-
-
-## Sass / PostCSS 
-
-Sass ou PostCSS absolument nécessaire pour nous :
-
-- Variables Sass :
-  - $breakpoints (indispensable)
-  - $variants-list (indispensable ?)
-- Mixins Sass : 
-  - respond-to (indispensable ?)
-  - font-sizes (indispensable ?)
-  - grid mixin (indispensable ?)
-- Rassemblement de fichiers (`@import`)
-- Nestings
-- Constructeurs de Grillade
-- Constructeurs de classes utilitaires 

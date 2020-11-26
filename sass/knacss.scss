@@ -1,7 +1,7 @@
 /*!
 * KNACSS Reborn: Just keep it simple!
 * @author: Alsacreations
-* v0.9.1 2020/10
+* v1.0.0 2020/11
 * Licence WTFPL http://www.wtfpl.net/
 */
 
@@ -16,18 +16,16 @@
 @import "base/reset-print";
 @import "base/layout";
 
-@import "abstracts/mixins-sass"; 
+@import "abstracts/mixins-sass";
 
 // UTILITY CLASSES
-@import "utils/utils-global";
-@import "utils/utils-spacers";
-@import "utils/grillade";
-
+// @import "utils/utils-global";
+// @import "utils/utils-spacers";
+// @import "utils/grillade";
 
 // COMPONENTS (add them only if you need)
-@import "components/button";
-@import "components/burger";
-@import "components/checkbox";
-@import "components/radio";
-@import "components/quote";
-
+// @import "components/button";
+// @import "components/burger";
+// @import "components/checkbox";
+// @import "components/radio";
+// @import "components/quote";
