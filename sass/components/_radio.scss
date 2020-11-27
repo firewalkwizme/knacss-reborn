@@ -7,12 +7,11 @@
  * <label for="r1">Click here</label>
  */
 
-
 /*
  * radio variables (you can change them)
  */
 
-$radio-color: $color-forms;
+$radio-color: $color-alpha;
 $radio-background: $white;
 $radio-size: 2rem;
 $radio-border-radius: 50%;
@@ -32,23 +31,22 @@ $radio-border-radius: 50%;
   height: $radio-size;
   vertical-align: text-bottom;
   outline: 0;
-  box-shadow: inset 0 0 0 1px $color-forms;
+  box-shadow: inset 0 0 0 1px $color-alpha;
   background-color: $radio-background;
-  transition: background-size .15s;
+  transition: background-size 0.15s;
   cursor: pointer;
 }
-
 
 .radio + label {
   cursor: pointer;
 }
 
 .radio:disabled {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .radio:disabled + label {
-  opacity: .6;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
@@ -57,5 +55,5 @@ $radio-border-radius: 50%;
   background-size: 70% 70%;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $color-forms;
+  background-color: $color-alpha;
 }

@@ -33,15 +33,15 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  background-color: $color-background-body;
-  color: $color-text-primary;
+  background-color: $white;
+  color: $color-gamma;
 }
 
 /*
  * Headings
  */
 
-h1, 
+h1,
 .h1-like,
 h2,
 .h2-like,
@@ -53,7 +53,7 @@ h5,
 .h5-like,
 h6,
 .h6-like {
-  color: $color-text-heading;
+  color: $color-gamma;
 }
 
 /*
@@ -61,14 +61,14 @@ h6,
  */
 
 a {
-  color: $color-link-primary;
+  color: $color-beta;
   text-decoration: $link-decoration;
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: $color-link-secondary;
+  color: $color-gamma;
   text-decoration: $link-decoration-hover;
 }
 
