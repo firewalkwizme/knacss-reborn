@@ -93,6 +93,9 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
+css/*
+
+
 # Click-Once directory
 publish
 
@@ -167,8 +170,10 @@ pip-log.txt
 # parce qu'on s'en fout
 *.log
 
-# parce que trop lourd
+# parce que trop lourd, ...
 node_modules/
+package-lock.json
+yarn.lock
 
 # parce que certaines personnes utilisent de vrais IDEs
 .idea
